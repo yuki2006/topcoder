@@ -6,7 +6,7 @@ import java.util.HashMap;
 /**
  * @bug
  * @author yuki
- * 
+ *
  */
 public class SurveillanceSystem {
 	public String getContainerInfo(String containers, int[] reports, int L) {
@@ -21,6 +21,17 @@ public class SurveillanceSystem {
 			}
 			map.put(report, value + 1);
 		}
+		//カメラをおいた時のフォーカスの数を求める配列。
+		int[] focusContainers = new int[length];
+		for (int i = 0; i <= length - L; i++) {
+			int container = 0;
+			for (int j = 0; j < L; j++) {
+				if (i + j < length && containers.charAt(i + j) == 'X') {
+					container++;
+				}
+			}
+			focusContainers[i] = container;
+		}
 		// 結果のchar配列をすべて – で初期化しておく。
 		Arrays.fill(c, '-');
 		for (Integer key : map.keySet()) {
@@ -28,14 +39,8 @@ public class SurveillanceSystem {
 			int m = map.get(key);
 			// カメラのポジションの候補探す（候補がn 箇所）
 			int n = 0;
-			for (int i = 0; i < length - L; i++) {
-				int container = 0;
-				for (int j = 0; j < L; j++) {
-					if (i + j < length && containers.charAt(i + j) == 'X') {
-						container++;
-					}
-				}
-				if (container == key) {
+			for (int i = 0; i <= length - L; i++) {
+				if (focusContainers[i] == key) {
 					n++;
 					for (int j = 0; j < L; j++) {
 						if (i + j < length) {
@@ -50,7 +55,7 @@ public class SurveillanceSystem {
 					c[i] = '+';
 				} else if (focuses[i] >= 1 && c[i] == '-') {
 					// 1個以上フォーカスされている時
-					// 配列のその場所が　–　のときは？に書き換える。
+					// 配列のその場所が–のときは？に書き換える。
 					c[i] = '?';
 				}
 			}
@@ -61,7 +66,7 @@ public class SurveillanceSystem {
 	// BEGIN CUT HERE
 	public static void main(String[] args) {
 		if (args.length == 0) {
-			SurveillanceSystemHarness.run_test(0);
+			SurveillanceSystemHarness.run_test(-1);
 		} else {
 			for (int i = 0; i < args.length; ++i)
 				SurveillanceSystemHarness.run_test(Integer.valueOf(args[i]));
@@ -172,7 +177,7 @@ class SurveillanceSystemHarness {
 		 * int[] reports = ;
 		 * int L = ;
 		 * String expected__ = ;
-		 * 
+		 *
 		 * return verifyCase(casenum__, expected__, new
 		 * SurveillanceSystem().getContainerInfo(containers, reports, L));
 		 * }
@@ -183,7 +188,7 @@ class SurveillanceSystemHarness {
 		 * int[] reports = ;
 		 * int L = ;
 		 * String expected__ = ;
-		 * 
+		 *
 		 * return verifyCase(casenum__, expected__, new
 		 * SurveillanceSystem().getContainerInfo(containers, reports, L));
 		 * }
@@ -194,7 +199,7 @@ class SurveillanceSystemHarness {
 		 * int[] reports = ;
 		 * int L = ;
 		 * String expected__ = ;
-		 * 
+		 *
 		 * return verifyCase(casenum__, expected__, new
 		 * SurveillanceSystem().getContainerInfo(containers, reports, L));
 		 * }
