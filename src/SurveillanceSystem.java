@@ -2,9 +2,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 // Paste me into the FileEdit configuration dialog
-// Single Round Match 581 - Round 1500.0
+// Single Round Match 581 - Round 1 500.0
 /**
- * @bug
  * @author yuki
  *
  */
