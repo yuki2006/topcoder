@@ -21,7 +21,7 @@ public class SurveillanceSystem {
 			}
 			map.put(report, value + 1);
 		}
-		//カメラをおいた時のフォーカスの数を求める配列。
+		// カメラをおいた時のフォーカスの数を求める配列。
 		int[] focusContainers = new int[length];
 		for (int i = 0; i <= length - L; i++) {
 			int container = 0;
@@ -43,9 +43,7 @@ public class SurveillanceSystem {
 				if (focusContainers[i] == key) {
 					n++;
 					for (int j = 0; j < L; j++) {
-						if (i + j < length) {
-							focuses[i + j]++;
-						}
+						focuses[i + j]++;
 					}
 				}
 			}
