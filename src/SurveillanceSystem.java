@@ -1,75 +1,67 @@
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Map.Entry;
 
 // Paste me into the FileEdit configuration dialog
 // Single Round Match 581 - Round 1500.0
 /**
  * @bug
  * @author yuki
- *
+ * 
  */
 public class SurveillanceSystem {
 	public String getContainerInfo(String containers, int[] reports, int L) {
-		int[] watchCount = new int[containers.length()];
-
-		for (int i = 0; i < containers.length(); i++) {
-			for (int j = 0; j < L && i + j < containers.length(); j++) {
-				watchCount[i] += containers.charAt(i + j) == 'X' ? 1 : 0;
-			}
-		}
-		for (int i = containers.length() - L + 1; i < containers.length(); i++) {
-			watchCount[i] = -1;
-		}
-		char[] zones = new char[containers.length()];
-		Arrays.fill(zones, '-');
+		int length = containers.length();
+		char[] c = new char[length];
+		// Containerをフォーカスしてる数を連想配列でまとめる
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 		for (int report : reports) {
-			Integer integer = map.get(report);
-			if (integer == null) {
-				integer = 0;
+			Integer value = 0;
+			if (map.containsKey(report)) {
+				value = map.get(report);
 			}
-			map.put(report, integer + 1);
+			map.put(report, value + 1);
 		}
-		for (Entry<Integer, Integer> report : map.entrySet()) {
-			int[] count = new int[watchCount.length];
-			for (int i = 0; i < watchCount.length; i++) {
-				if (watchCount[i] == report.getKey()) {
-					for (int j = 0; j < L && i + j < containers.length(); j++) {
-						count[i + j]++;
+		// 結果のchar配列をすべて – で初期化しておく。
+		Arrays.fill(c, '-');
+		for (Integer key : map.keySet()) {
+			int[] focuses = new int[length];
+			int m = map.get(key);
+			// カメラのポジションの候補探す（候補がn 箇所）
+			int n = 0;
+			for (int i = 0; i < length - L; i++) {
+				int container = 0;
+				for (int j = 0; j < L; j++) {
+					if (i + j < length && containers.charAt(i + j) == 'X') {
+						container++;
 					}
 				}
-			}
-			int max = 0;
-			int subTotal = 0;
-			for (int i = 0; i < count.length; i++) {
-				subTotal += count[i];
-				if (count[i] > max) {
-					max = count[i];
-				} else if (count[i] == 0) {
-					if (subTotal / L == max) {
-						for (int j = i - 1; j >= 0; j--) {
-							count[j] = Integer.MAX_VALUE;
+				if (container == key) {
+					n++;
+					for (int j = 0; j < L; j++) {
+						if (i + j < length) {
+							focuses[i + j]++;
 						}
 					}
 				}
 			}
-
-			for (int i = 0; i < count.length; i++) {
-				if (count[i] ==  Integer.MAX_VALUE) {
-					zones[i] = '+';
-				} else if (count[i] > 0 && zones[i] != '+') {
-					zones[i] = '?';
+			for (int i = 0; i < focuses.length; i++) {
+				if (focuses[i] >= n - m + 1) {
+					// (n-m)+1個以上フォーカスされている時 その配列の場所は＋に書き換える。
+					c[i] = '+';
+				} else if (focuses[i] >= 1 && c[i] == '-') {
+					// 1個以上フォーカスされている時
+					// 配列のその場所が　–　のときは？に書き換える。
+					c[i] = '?';
 				}
 			}
 		}
-		return String.valueOf(zones);
+		return new String(c);
 	}
 
 	// BEGIN CUT HERE
 	public static void main(String[] args) {
 		if (args.length == 0) {
-			SurveillanceSystemHarness.run_test(4);
+			SurveillanceSystemHarness.run_test(0);
 		} else {
 			for (int i = 0; i < args.length; ++i)
 				SurveillanceSystemHarness.run_test(Integer.valueOf(args[i]));
@@ -180,7 +172,7 @@ class SurveillanceSystemHarness {
 		 * int[] reports = ;
 		 * int L = ;
 		 * String expected__ = ;
-		 *
+		 * 
 		 * return verifyCase(casenum__, expected__, new
 		 * SurveillanceSystem().getContainerInfo(containers, reports, L));
 		 * }
@@ -191,7 +183,7 @@ class SurveillanceSystemHarness {
 		 * int[] reports = ;
 		 * int L = ;
 		 * String expected__ = ;
-		 *
+		 * 
 		 * return verifyCase(casenum__, expected__, new
 		 * SurveillanceSystem().getContainerInfo(containers, reports, L));
 		 * }
@@ -202,7 +194,7 @@ class SurveillanceSystemHarness {
 		 * int[] reports = ;
 		 * int L = ;
 		 * String expected__ = ;
-		 *
+		 * 
 		 * return verifyCase(casenum__, expected__, new
 		 * SurveillanceSystem().getContainerInfo(containers, reports, L));
 		 * }
