@@ -34,13 +34,13 @@ public class SurveillanceSystem {
 		}
 		// 結果のchar配列をすべて – で初期化しておく。
 		Arrays.fill(c, '-');
-		for (Integer key : map.keySet()) {
+		for (Integer focus : map.keySet()) {
 			int[] focuses = new int[length];
-			int m = map.get(key);
+			int m = map.get(focus);
 			// カメラのポジションの候補探す（候補がn 箇所）
 			int n = 0;
 			for (int i = 0; i <= length - L; i++) {
-				if (focusContainers[i] == key) {
+				if (focusContainers[i] == focus) {
 					n++;
 					for (int j = 0; j < L; j++) {
 						focuses[i + j]++;
