@@ -4,24 +4,13 @@
 public class ShoutterDiv2 {
 	public int count(int[] s, int[] t) {
 		int pairs = 0;
-		for (int i = 0; i < s.length - 1; i++) {
-			for (int j = i + 1; j < s.length; j++) {
-				if (s[i] > s[j]) {
-					int t1 = s[i], t2 = t[i];
-					s[i] = s[j];
-					t[i] = t[j];
-					s[j] = t1;
-					t[j] = t2;
-				}
-			}
-		}
-		for (int i = 0; i < s.length - 1; i++) {
-			for (int j = i + 1; j < s.length; j++) {
-				if (t[i]<=s[j] &&s[j]<=t[i]) {
-					pairs++;
-				}
-			}
-		}
+	    for (int i=1; i<s.length; i++) {
+	        for (int j = 0; j < i; j++) {
+	            if ( s[j] <= t[i] && s[i] <= t[j] ) {
+	            	pairs++;
+	            }
+	        }
+	    }
 		return pairs;
 	}
 

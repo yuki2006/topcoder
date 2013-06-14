@@ -3,29 +3,31 @@
 
 public class BlackAndWhiteSolitaire {
 	public int minimumTurns(String cardFront) {
-		char[] sequenceC = cardFront.toCharArray();
-		boolean[] isWhitesequence = new boolean[sequenceC.length];
+		boolean[] isWhitesequence = new boolean[cardFront.length()];
 		for (int i = 0; i < cardFront.length(); i++) {
-			isWhitesequence[i] = sequenceC[i] == 'W';
+			isWhitesequence[i] = cardFront.charAt(i) == 'W';
 		}
+		//trueならWを見てる。
+
 		boolean current = true;
-		int isFirstWCount = 0, isFirstBCount = 0;
+		int wcount = 0, bcount = 0;
 		for (int i = 0; i < cardFront.length(); i++) {
 			if (isWhitesequence[i] != current)
 			{
-				isFirstWCount++;
+				wcount++;
 			}
 			current = !current;
 		}
 		current = false;
+
 		for (int i = 0; i < cardFront.length(); i++) {
 			if (isWhitesequence[i] != current)
 			{
-				isFirstBCount++;
+				bcount++;
 			}
 			current = !current;
 		}
-		return Math.min(isFirstBCount, isFirstWCount);
+		return Math.min(bcount, wcount);
 	}
 
 	// BEGIN CUT HERE

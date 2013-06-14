@@ -10,7 +10,6 @@ import java.util.HashMap;
 public class SurveillanceSystem {
 	public String getContainerInfo(String containers, int[] reports, int L) {
 		int length = containers.length();
-		char[] c = new char[length];
 		// Containerをフォーカスしてる数を連想配列でまとめる
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 		for (int report : reports) {
@@ -31,6 +30,7 @@ public class SurveillanceSystem {
 			}
 			focusContainers[i] = container;
 		}
+		char[] c = new char[length];
 		// 結果のchar配列をすべて – で初期化しておく。
 		Arrays.fill(c, '-');
 		for (Integer focus : map.keySet()) {
