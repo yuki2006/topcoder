@@ -1,40 +1,27 @@
-import java.util.LinkedHashMap;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Map.Entry;
-import java.util.Set;
 import java.util.TreeMap;
 
 // Paste me into the FileEdit configuration dialog
 // Single Round Match 582 - Round 1500.0
 
 public class SpaceWarDiv2 {
-	public static int max(int[] values) {
-		int max = Integer.MIN_VALUE;
-		for (int i : values) {
-			max = Math.max(max, i);
-		}
-		return max;
-	}
-
-	public static int maxIndex(int[] values, int maxThreshold) {
-		int max = Integer.MIN_VALUE;
-		int maxIndex = -1;
-		for (int i = 0; i < values.length; i++) {
-			if (max < values[i] && maxThreshold > values[i]) {
-				max = values[i];
-				maxIndex = i;
-			}
-		}
-		return maxIndex;
-	}
 
 	public int minimalFatigue(int[] magicalGirlStrength, int[] enemyStrength,
 			int[] enemyCount) {
 
-		if (max(magicalGirlStrength) < max(enemyStrength)) {
-			return -1;
-		}
-		TreeMap<Integer, Integer> treemap = new TreeMap<Integer, Integer>();
-		int[] win = new int[magicalGirlStrength.length];
+		Comparator<Integer> c = new Comparator<Integer>() {
+		    public int compare(Integer x, Integer y) {
+		        return -1* ((x < y) ? -1 : ((x == y) ? 0 : 1));
+		    }
+
+		};
+		//log(n)
+		TreeMap<Integer, Integer> treemap = new TreeMap<Integer, Integer>(c);
+		Arrays.sort(magicalGirlStrength);
+
+		int total = 0;
 		for (int i = 0; i < enemyStrength.length; i++) {
 			Integer value = treemap.get(enemyStrength[i]);
 			if (value == null) {
@@ -42,17 +29,32 @@ public class SpaceWarDiv2 {
 			}
 			value += enemyCount[i];
 			treemap.put(enemyStrength[i], value);
+			total += enemyCount[i];
 		}
-		Set<Entry<Integer, Integer>> entrySet = treemap.entrySet();
-		for (Entry<Integer, Integer> entry : entrySet) {
-			for (int i = 0; i < win.length; i++) {
-				if (entry.getKey()<magicalGirlStrength[i]){
-					win[i]+=entry.getValue();
+		// O(50*50*100)=O(250000)
+		for (int t = 1;; t++) {
+			boolean hit=false;
+			// O(50)
+			for (int i = 0; i < magicalGirlStrength.length; i++) {
+
+				// O(50*100)
+				for (Entry<Integer, Integer> entry : treemap.entrySet()) {
+					if (entry.getValue() > 0
+							&& entry.getKey() <= magicalGirlStrength[i]) {
+						entry.setValue(entry.getValue() - 1);
+						total--;
+						if (total == 0) {
+							return t;
+						}
+						hit=true;
+						break;
+					}
 				}
 			}
+			if (!hit){
+				return -1;
+			}
 		}
-
-
 
 	}
 
