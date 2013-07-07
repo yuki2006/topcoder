@@ -3,33 +3,24 @@
 
 public class SwappingDigits {
 	public String minNumber(String num) {
-		long min = Integer.MAX_VALUE;
-		int[] nums = new int[num.length()];
-		int k = 0;
-		for (char i : num.toCharArray()) {
-			nums[k] = i-'0';
-			k++;
-		}
-		for (int n1 = 1; n1 <= 10; n1++) {
-			int n=n1%10;
-			for (int i = nums.length - 1; i >= 1; i--) {
-				if (nums[i] == n) {
-					for (int j = 0; j < nums.length; j++) {
-						if (nums[j] >= n && !(j==0&& n==0)) {
-							int tmp = nums[i];
-							nums[i] = nums[j];
-							nums[j] = tmp;
-							StringBuilder builder = new StringBuilder();
-							for (int y : nums) {
-								builder.append(y);
-							}
-							return builder.toString();
-						}
-					}
+		String min = new String(num);
+		for (int i = num.length() - 1; i >= 0; i--) {
+			for (int j = num.length() - 1; j >= 0; j--) {
+
+				char[] charArray = num.toCharArray();
+				char tmp = charArray[i];
+				charArray[i] = charArray[j];
+				charArray[j] = tmp;
+				if (charArray[0]== '0') {
+					continue;
+				}
+				String string = new String(charArray);
+				if (min.compareTo(string) > 0) {
+					min = string;
 				}
 			}
 		}
-		return "";
+		return min;
 
 	}
 
@@ -135,7 +126,7 @@ class SwappingDigitsHarness {
 		 * case 5: {
 		 * String num = ;
 		 * String expected__ = ;
-		 *
+		 * 
 		 * return verifyCase(casenum__, expected__, new
 		 * SwappingDigits().minNumber(num));
 		 * }
@@ -144,7 +135,7 @@ class SwappingDigitsHarness {
 		 * case 6: {
 		 * String num = ;
 		 * String expected__ = ;
-		 *
+		 * 
 		 * return verifyCase(casenum__, expected__, new
 		 * SwappingDigits().minNumber(num));
 		 * }
@@ -153,7 +144,7 @@ class SwappingDigitsHarness {
 		 * case 7: {
 		 * String num = ;
 		 * String expected__ = ;
-		 *
+		 * 
 		 * return verifyCase(casenum__, expected__, new
 		 * SwappingDigits().minNumber(num));
 		 * }
