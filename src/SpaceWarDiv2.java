@@ -1,57 +1,60 @@
 import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Map.Entry;
-import java.util.TreeMap;
+import java.util.HashMap;
 
 // Paste me into the FileEdit configuration dialog
 // Single Round Match 582 - Round 1500.0
 
 public class SpaceWarDiv2 {
+	public static void reverse(Integer[] keys) {
+		for (int i = 0; i < keys.length / 2; i++) {
+			int tmp = keys[keys.length - i - 1];
+			keys[keys.length - i - 1] = keys[i];
+			keys[i] = tmp;
+		}
+	}
 
 	public int minimalFatigue(int[] magicalGirlStrength, int[] enemyStrength,
 			int[] enemyCount) {
 
-		Comparator<Integer> c = new Comparator<Integer>() {
-		    public int compare(Integer x, Integer y) {
-		        return -1* ((x < y) ? -1 : ((x == y) ? 0 : 1));
-		    }
-
-		};
-		//log(n)
-		TreeMap<Integer, Integer> treemap = new TreeMap<Integer, Integer>(c);
+		// log(n)
+		HashMap<Integer, Integer> hashMap = new HashMap<Integer, Integer>();
 		Arrays.sort(magicalGirlStrength);
 
 		int total = 0;
 		for (int i = 0; i < enemyStrength.length; i++) {
-			Integer value = treemap.get(enemyStrength[i]);
+			Integer value = hashMap.get(enemyStrength[i]);
 			if (value == null) {
 				value = 0;
 			}
 			value += enemyCount[i];
-			treemap.put(enemyStrength[i], value);
+			hashMap.put(enemyStrength[i], value);
 			total += enemyCount[i];
 		}
+		Integer[] keys = hashMap.keySet().toArray(new Integer[0]);
+		Arrays.sort(keys);
+		reverse(keys);
 		// O(50*50*100)=O(250000)
 		for (int t = 1;; t++) {
-			boolean hit=false;
+			boolean hit = false;
 			// O(50)
 			for (int i = 0; i < magicalGirlStrength.length; i++) {
 
 				// O(50*100)
-				for (Entry<Integer, Integer> entry : treemap.entrySet()) {
-					if (entry.getValue() > 0
-							&& entry.getKey() <= magicalGirlStrength[i]) {
-						entry.setValue(entry.getValue() - 1);
+
+				for (Integer key : keys) {
+					if (hashMap.get(key) > 0
+							&& key <= magicalGirlStrength[i]) {
+						hashMap.put(key, hashMap.get(key) - 1);
 						total--;
 						if (total == 0) {
 							return t;
 						}
-						hit=true;
+						hit = true;
 						break;
 					}
 				}
 			}
-			if (!hit){
+			if (!hit) {
 				return -1;
 			}
 		}
@@ -174,7 +177,7 @@ class SpaceWarDiv2Harness {
 		/*
 		 * case 4: { int[] magicalGirlStrength = ; int[] enemyStrength = ; int[]
 		 * enemyCount = ; int expected__ = ;
-		 *
+		 * 
 		 * return verifyCase(casenum__, expected__, new
 		 * SpaceWarDiv2().minimalFatigue(magicalGirlStrength, enemyStrength,
 		 * enemyCount)); }
@@ -182,7 +185,7 @@ class SpaceWarDiv2Harness {
 		/*
 		 * case 5: { int[] magicalGirlStrength = ; int[] enemyStrength = ; int[]
 		 * enemyCount = ; int expected__ = ;
-		 *
+		 * 
 		 * return verifyCase(casenum__, expected__, new
 		 * SpaceWarDiv2().minimalFatigue(magicalGirlStrength, enemyStrength,
 		 * enemyCount)); }
@@ -190,7 +193,7 @@ class SpaceWarDiv2Harness {
 		/*
 		 * case 6: { int[] magicalGirlStrength = ; int[] enemyStrength = ; int[]
 		 * enemyCount = ; int expected__ = ;
-		 *
+		 * 
 		 * return verifyCase(casenum__, expected__, new
 		 * SpaceWarDiv2().minimalFatigue(magicalGirlStrength, enemyStrength,
 		 * enemyCount)); }

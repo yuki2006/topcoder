@@ -22,6 +22,7 @@ public class BunnyPuzzle {
 			for (int i = 0; i < args.length; ++i)
 				BunnyPuzzleHarness.run_test(Integer.valueOf(args[i]));
 		}
+		
 	}
 	// END CUT HERE
 }
