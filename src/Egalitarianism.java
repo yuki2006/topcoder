@@ -7,7 +7,9 @@ public class Egalitarianism {
 		for (int i = 0; i < isFriend.length; i++) {
 			String string = isFriend[i];
 			for (int j = 0; j < string.length(); j++) {
-				p[i][j] =p[j][i]= string.charAt(j) == 'Y' ? d : MV;
+				if (i!=j){
+				p[i][j] = string.charAt(j) == 'Y' ? d : MV;
+				}
 			}
 		}
 		for (int k = 0; k < p.length; k++) {
