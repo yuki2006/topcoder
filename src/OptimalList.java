@@ -1,43 +1,45 @@
-	// Paste me into the FileEdit configuration dialog
-// Single Round Match 583 - Round 1250.0
+import java.util.ArrayList;
+import java.util.Arrays;
 
-public class SwappingDigits {
-	public String minNumber(String num) {
-		String min = new String(num);
-		for (int i = num.length() - 1; i >= 0; i--) {
-			for (int j = num.length() - 1; j >= 0; j--) {
+// Paste me into the FileEdit configuration dialog
+// SRM 348 DIV 2 - 250.0
 
-				char[] charArray = num.toCharArray();
-				char tmp = charArray[i];
-				charArray[i] = charArray[j];
-				charArray[j] = tmp;
-				if (charArray[0]== '0') {
-					continue;
-				}
-				String string = new String(charArray);
-				if (min.compareTo(string) > 0) {
-					min = string;
+public class OptimalList {
+	public String optimize(String inst) {
+		char[] charArray = inst.toCharArray();
+		for (int i = 0; i < charArray.length; i++) {
+			char c = charArray[i];
+			for (int j = 0; j < charArray.length; j++) {
+				if (charArray[i] == 'N' && charArray[j] == 'S'
+						|| charArray[i] == 'W' && charArray[j] == 'E') {
+					charArray[i] = charArray[j] = 0;
 				}
 			}
 		}
-		return min;
-
+		Arrays.sort(charArray);
+		String string = "";
+		for (char c : charArray) {
+			if (c != 0) {
+				string += c;
+			}
+		}
+		return string;
 	}
 
 	// BEGIN CUT HERE
 	public static void main(String[] args) {
 		if (args.length == 0) {
-			SwappingDigitsHarness.run_test(-1);
+			OptimalListHarness.run_test(-1);
 		} else {
 			for (int i = 0; i < args.length; ++i)
-				SwappingDigitsHarness.run_test(Integer.valueOf(args[i]));
+				OptimalListHarness.run_test(Integer.valueOf(args[i]));
 		}
 	}
 	// END CUT HERE
 }
 
 // BEGIN CUT HERE
-class SwappingDigitsHarness {
+class OptimalListHarness {
 	public static void run_test(int casenum) {
 		if (casenum != -1) {
 			if (runTestCase(casenum) == -1)
@@ -90,63 +92,57 @@ class SwappingDigitsHarness {
 	static int runTestCase(int casenum__) {
 		switch (casenum__) {
 		case 0: {
-			String num = "596";
-			String expected__ = "569";
+			String inst = "NENENNWWWWWS";
+			String expected__ = "NNNWWW";
 
-			return verifyCase(casenum__, expected__, new SwappingDigits().minNumber(num));
+			return verifyCase(casenum__, expected__, new OptimalList().optimize(inst));
 		}
 		case 1: {
-			String num = "93561";
-			String expected__ = "13569";
+			String inst = "NNEESSWW";
+			String expected__ = "";
 
-			return verifyCase(casenum__, expected__, new SwappingDigits().minNumber(num));
+			return verifyCase(casenum__, expected__, new OptimalList().optimize(inst));
 		}
 		case 2: {
-			String num = "5491727514";
-			String expected__ = "1491727554";
+			String inst = "NEWSNWESWESSEWSENSEWSEWESEWWEWEEWESSSWWWWWW";
+			String expected__ = "SSSSSSSSWWW";
 
-			return verifyCase(casenum__, expected__, new SwappingDigits().minNumber(num));
+			return verifyCase(casenum__, expected__, new OptimalList().optimize(inst));
 		}
 		case 3: {
-			String num = "10234";
-			String expected__ = "10234";
+			String inst = "NENENE";
+			String expected__ = "EEENNN";
 
-			return verifyCase(casenum__, expected__, new SwappingDigits().minNumber(num));
-		}
-		case 4: {
-			String num = "93218910471211292416";
-			String expected__ = "13218910471211292496";
-
-			return verifyCase(casenum__, expected__, new SwappingDigits().minNumber(num));
+			return verifyCase(casenum__, expected__, new OptimalList().optimize(inst));
 		}
 
 		// custom cases
 
 		/*
-		 * case 5: {
-		 * String num = ;
+		 * case 4: {
+		 * String inst = ;
 		 * String expected__ = ;
 		 * 
 		 * return verifyCase(casenum__, expected__, new
-		 * SwappingDigits().minNumber(num));
+		 * OptimalList().optimize(inst));
+		 * }
+		 */
+		/*
+		 * case 5: {
+		 * String inst = ;
+		 * String expected__ = ;
+		 * 
+		 * return verifyCase(casenum__, expected__, new
+		 * OptimalList().optimize(inst));
 		 * }
 		 */
 		/*
 		 * case 6: {
-		 * String num = ;
+		 * String inst = ;
 		 * String expected__ = ;
 		 * 
 		 * return verifyCase(casenum__, expected__, new
-		 * SwappingDigits().minNumber(num));
-		 * }
-		 */
-		/*
-		 * case 7: {
-		 * String num = ;
-		 * String expected__ = ;
-		 * 
-		 * return verifyCase(casenum__, expected__, new
-		 * SwappingDigits().minNumber(num));
+		 * OptimalList().optimize(inst));
 		 * }
 		 */
 		default:

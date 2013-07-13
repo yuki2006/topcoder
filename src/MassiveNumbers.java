@@ -1,43 +1,34 @@
-	// Paste me into the FileEdit configuration dialog
-// Single Round Match 583 - Round 1250.0
+// Paste me into the FileEdit configuration dialog
+// SRM 236 DIV 2 - 250.0
 
-public class SwappingDigits {
-	public String minNumber(String num) {
-		String min = new String(num);
-		for (int i = num.length() - 1; i >= 0; i--) {
-			for (int j = num.length() - 1; j >= 0; j--) {
-
-				char[] charArray = num.toCharArray();
-				char tmp = charArray[i];
-				charArray[i] = charArray[j];
-				charArray[j] = tmp;
-				if (charArray[0]== '0') {
-					continue;
-				}
-				String string = new String(charArray);
-				if (min.compareTo(string) > 0) {
-					min = string;
-				}
-			}
+public class MassiveNumbers {
+	public String getLargest(String numberA, String numberB) {
+		String[] split;
+		split = numberA.split("\\^");
+		double numA = Integer.valueOf(split[1]) * Math.log10(Integer.valueOf(split[0]));
+		split = numberB.split("\\^");
+		double numB = Integer.valueOf(split[1]) * Math.log10(Integer.valueOf(split[0]));
+		if (numA<numB){
+			return numberB;
+		}else{
+			return numberA;
 		}
-		return min;
-
 	}
 
 	// BEGIN CUT HERE
 	public static void main(String[] args) {
 		if (args.length == 0) {
-			SwappingDigitsHarness.run_test(-1);
+			MassiveNumbersHarness.run_test(-1);
 		} else {
 			for (int i = 0; i < args.length; ++i)
-				SwappingDigitsHarness.run_test(Integer.valueOf(args[i]));
+				MassiveNumbersHarness.run_test(Integer.valueOf(args[i]));
 		}
 	}
 	// END CUT HERE
 }
 
 // BEGIN CUT HERE
-class SwappingDigitsHarness {
+class MassiveNumbersHarness {
 	public static void run_test(int casenum) {
 		if (casenum != -1) {
 			if (runTestCase(casenum) == -1)
@@ -90,63 +81,64 @@ class SwappingDigitsHarness {
 	static int runTestCase(int casenum__) {
 		switch (casenum__) {
 		case 0: {
-			String num = "596";
-			String expected__ = "569";
+			String numberA = "3^100";
+			String numberB = "2^150";
+			String expected__ = "3^100";
 
-			return verifyCase(casenum__, expected__, new SwappingDigits().minNumber(num));
+			return verifyCase(casenum__, expected__, new MassiveNumbers().getLargest(numberA, numberB));
 		}
 		case 1: {
-			String num = "93561";
-			String expected__ = "13569";
+			String numberA = "1^1000";
+			String numberB = "2^1";
+			String expected__ = "2^1";
 
-			return verifyCase(casenum__, expected__, new SwappingDigits().minNumber(num));
+			return verifyCase(casenum__, expected__, new MassiveNumbers().getLargest(numberA, numberB));
 		}
 		case 2: {
-			String num = "5491727514";
-			String expected__ = "1491727554";
+			String numberA = "893^605";
+			String numberB = "396^906";
+			String expected__ = "396^906";
 
-			return verifyCase(casenum__, expected__, new SwappingDigits().minNumber(num));
+			return verifyCase(casenum__, expected__, new MassiveNumbers().getLargest(numberA, numberB));
 		}
 		case 3: {
-			String num = "10234";
-			String expected__ = "10234";
+			String numberA = "999^1000";
+			String numberB = "1000^999";
+			String expected__ = "999^1000";
 
-			return verifyCase(casenum__, expected__, new SwappingDigits().minNumber(num));
-		}
-		case 4: {
-			String num = "93218910471211292416";
-			String expected__ = "13218910471211292496";
-
-			return verifyCase(casenum__, expected__, new SwappingDigits().minNumber(num));
+			return verifyCase(casenum__, expected__, new MassiveNumbers().getLargest(numberA, numberB));
 		}
 
 		// custom cases
 
 		/*
-		 * case 5: {
-		 * String num = ;
+		 * case 4: {
+		 * String numberA = ;
+		 * String numberB = ;
 		 * String expected__ = ;
 		 * 
 		 * return verifyCase(casenum__, expected__, new
-		 * SwappingDigits().minNumber(num));
+		 * MassiveNumbers().getLargest(numberA, numberB));
+		 * }
+		 */
+		/*
+		 * case 5: {
+		 * String numberA = ;
+		 * String numberB = ;
+		 * String expected__ = ;
+		 * 
+		 * return verifyCase(casenum__, expected__, new
+		 * MassiveNumbers().getLargest(numberA, numberB));
 		 * }
 		 */
 		/*
 		 * case 6: {
-		 * String num = ;
+		 * String numberA = ;
+		 * String numberB = ;
 		 * String expected__ = ;
 		 * 
 		 * return verifyCase(casenum__, expected__, new
-		 * SwappingDigits().minNumber(num));
-		 * }
-		 */
-		/*
-		 * case 7: {
-		 * String num = ;
-		 * String expected__ = ;
-		 * 
-		 * return verifyCase(casenum__, expected__, new
-		 * SwappingDigits().minNumber(num));
+		 * MassiveNumbers().getLargest(numberA, numberB));
 		 * }
 		 */
 		default:
