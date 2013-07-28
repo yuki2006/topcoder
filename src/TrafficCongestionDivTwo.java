@@ -2,9 +2,18 @@
 // Single Round Match 585 - Round 1500.0
 
 public class TrafficCongestionDivTwo {
+/*
+  新しいアルゴリズム
+*/
+	public long theMinCars(int treeHeight) {
+		return ((long) Math.pow(2, treeHeight + 1) + 1) / 3;
+	}
+/*
+  SRM提出時のアルゴリズム
+*/
 	long[] memo = new long[61];
 
-	public long theMinCars(int treeHeight) {
+	public long theMinCars2(int treeHeight) {
 		memo[0] = memo[1] = 1;
 		return calc(treeHeight);
 	}
