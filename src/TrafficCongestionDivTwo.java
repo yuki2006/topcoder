@@ -15,9 +15,7 @@ public class TrafficCongestionDivTwo {
 		}
 
 		for (int i = 0; i <= height - 2; i++) {
-			for (int j = 0; j < 2; j++) {
-				memo[height] += calc(i);
-			}
+			memo[height] += 2 * calc(i);
 		}
 		memo[height]++;
 		return memo[height];
@@ -131,19 +129,19 @@ class TrafficCongestionDivTwoHarness {
 
 		/*
 		 * case 5: { int treeHeight = ; long expected__ = ;
-		 *
+		 * 
 		 * return verifyCase(casenum__, expected__, new
 		 * TrafficCongestionDivTwo().theMinCars(treeHeight)); }
 		 */
 		/*
 		 * case 6: { int treeHeight = ; long expected__ = ;
-		 *
+		 * 
 		 * return verifyCase(casenum__, expected__, new
 		 * TrafficCongestionDivTwo().theMinCars(treeHeight)); }
 		 */
 		/*
 		 * case 7: { int treeHeight = ; long expected__ = ;
-		 *
+		 * 
 		 * return verifyCase(casenum__, expected__, new
 		 * TrafficCongestionDivTwo().theMinCars(treeHeight)); }
 		 */
