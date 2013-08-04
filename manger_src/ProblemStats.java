@@ -276,7 +276,7 @@ public class ProblemStats implements Serializable {
 	 */
 	public String toMDString(List<CommentStats> commentList, File[] files) {
 		StringBuilder builder = new StringBuilder();
-		builder.append(problemId+"|[" + className + "](http://community.topcoder.com/stat?c=problem_statement&pm=" + problemId
+		builder.append("[" + className + "](http://community.topcoder.com/stat?c=problem_statement&pm=" + problemId
 				+ ")" + "|" + getSRMNumber() + "|" + "2" + "|" + div2Level + "|");
 		boolean hit = false;
 		for (CommentStats commnetStats : commentList) {
