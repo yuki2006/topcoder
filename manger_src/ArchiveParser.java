@@ -1,9 +1,11 @@
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.PrintStream;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
@@ -47,16 +49,18 @@ public class ArchiveParser {
 		File dir = new File("src");
 		File[] files = dir.listFiles();
 
-		System.out.println("probremID|ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|");
-		System.out.println("|:--|:--|:--|:--|:--| :-- | :--|:--|");
+		PrintStream printStream = new PrintStream(new File("README.md"));
+		printStream.println("probremID|ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|");
+		printStream.println("|:--|:--|:--|:--|:--| :-- | :--|:--|");
 
 		for (ProblemStats problemStats : problemStatsList) {
 			if (problemStats.getContestName().contains("SRM")) {
 				if (problemStats.getFieldString(ProblemStats.COLUMN_DIVISION).contains("2")) {
-					System.out.println(problemStats.toMDString(commentList, files));
+					printStream.println(problemStats.toMDString(commentList, files));
 				}
 			}
 		}
+		printStream.close();
 	}
 
 	public List<CommentStats> getCommentList() throws IOException
