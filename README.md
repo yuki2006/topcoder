@@ -1,7 +1,7 @@
 probremID|ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|
 |:--|:--|:--|:--|:--| :-- | :--|:--|
 12700|[InsertZ](http://community.topcoder.com/stat?c=problem_statement&pm=12700)|587|2|1|ひらめくと簡単|1|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/InsertZ.java)
-12300|[JumpFurther](http://community.topcoder.com/stat?c=problem_statement&pm=12300)|587|2|2|よく考えてみるとひらめくかもアルゴリズム的な知識は要らない、|2|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/JumpFurther.java)
+12300|[JumpFurther](http://community.topcoder.com/stat?c=problem_statement&pm=12300)|587|2|2|よく考えてみるとひらめくかも|2|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/JumpFurther.java)
 12699|[ThreeColorabilityEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12699)|587|2|3|||
 12696|[TeamsSelection](http://community.topcoder.com/stat?c=problem_statement&pm=12696)|586|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TeamsSelection.java)
 12698|[PiecewiseLinearFunctionDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12698)|586|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PiecewiseLinearFunctionDiv2.java)
