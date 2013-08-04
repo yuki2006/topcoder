@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -28,8 +29,8 @@ public class ArchiveParser {
 	 */
 	public static void main(String[] args) throws Exception {
 		ArchiveParser archiveParser = new ArchiveParser();
-		List<ProblemStats> problemStatsList = archiveParser.getProblemStatsList();
 		List<CommentStats> commentList = archiveParser.getCommentList();
+		List<ProblemStats> problemStatsList = archiveParser.getProblemStatsList();
 
 		Comparator<ProblemStats> s = new Comparator<ProblemStats>() {
 			@Override
@@ -46,8 +47,8 @@ public class ArchiveParser {
 		File dir = new File("src");
 		File[] files = dir.listFiles();
 
-		System.out.println("|ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|");
-		System.out.println("|:--|:--|:--|:--| :-- | :--|:--|");
+		System.out.println("probremID|ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|");
+		System.out.println("|:--|:--|:--|:--|:--| :-- | :--|:--|");
 
 		for (ProblemStats problemStats : problemStatsList) {
 			if (problemStats.getContestName().contains("SRM")) {
@@ -60,10 +61,8 @@ public class ArchiveParser {
 
 	public List<CommentStats> getCommentList() throws IOException
 	{
-		URL url = new URL("http://localhost/topcoder/comment.txt");
-		URLConnection connection = url.openConnection();
 		// FIXME: when to set this (breaks i.e. editorial fetching)?
-		String data = readAll(connection.getInputStream());
+		String data = readAll(new FileInputStream(new File("comment.txt")));
 		ArrayList<CommentStats> list = new ArrayList<CommentStats>();
 		for (String s : data.split("\n")) {
 			String[] split = s.split(",");
@@ -152,8 +151,8 @@ public class ArchiveParser {
 	}
 
 	private String getPage(String path) throws Exception {
-		//		URL url = new URL("http://community.topcoder.com/" + path); //$NON-NLS-1$
-		URL url = new URL("http://localhost/topcoder/ProblemArchive.htm");
+		URL url = new URL("http://community.topcoder.com/" + path); //$NON-NLS-1$
+		// URL url = new URL("http://localhost/topcoder/ProblemArchive.htm");
 		URLConnection connection = url.openConnection();
 		// FIXME: when to set this (breaks i.e. editorial fetching)?
 		return readAll(connection.getInputStream());
