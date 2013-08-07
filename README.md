@@ -54,7 +54,7 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|
 [Chopsticks](http://community.topcoder.com/stat?c=problem_statement&pm=12424)|570|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/Chopsticks.java)
 [RobotHerbDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12425)|570|2|2|||
 [CentaurCompanyDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12426)|570|2|3|||
-[TheJediTestDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12404)|569|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TheJediTestDiv2.java)
+[TheJediTestDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12404)|569|2|1|莉墓ｧ倥ｒ繧医￥閠?∴繧?12351|3|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TheJediTestDiv2.java)
 [TheDeviceDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12399)|569|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TheDeviceDiv2.java)
 [MegaFactorialDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12400)|569|2|3|||
 [TheSimilarNumbers](http://community.topcoder.com/stat?c=problem_statement&pm=10553)|568|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TheSimilarNumbers.java)
@@ -67,7 +67,7 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|
 [PenguinPals](http://community.topcoder.com/stat?c=problem_statement&pm=12355)|566|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PenguinPals.java)
 [FencingPenguinsEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12341)|566|2|3|||
 [ValueHistogram](http://community.topcoder.com/stat?c=problem_statement&pm=12275)|565|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/ValueHistogram.java)
-[MonstersValley2](http://community.topcoder.com/stat?c=problem_statement&pm=12351)|565|2|2|||
+[MonstersValley2](http://community.topcoder.com/stat?c=problem_statement&pm=12351)|565|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/MonstersValley2.java)
 [DivisibleSequence](http://community.topcoder.com/stat?c=problem_statement&pm=12274)|565|2|3|||
 [FauxPalindromes](http://community.topcoder.com/stat?c=problem_statement&pm=12325)|564|2|1|||
 [AlternateColors](http://community.topcoder.com/stat?c=problem_statement&pm=12343)|564|2|2|||
