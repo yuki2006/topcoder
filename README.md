@@ -69,7 +69,7 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|
 [ValueHistogram](http://community.topcoder.com/stat?c=problem_statement&pm=12275)|565|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/ValueHistogram.java)
 [MonstersValley2](http://community.topcoder.com/stat?c=problem_statement&pm=12351)|565|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/MonstersValley2.java)
 [DivisibleSequence](http://community.topcoder.com/stat?c=problem_statement&pm=12274)|565|2|3|||
-[FauxPalindromes](http://community.topcoder.com/stat?c=problem_statement&pm=12325)|564|2|1|||
+[FauxPalindromes](http://community.topcoder.com/stat?c=problem_statement&pm=12325)|564|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FauxPalindromes.java)
 [AlternateColors](http://community.topcoder.com/stat?c=problem_statement&pm=12343)|564|2|2|||
 [KnightCircuit](http://community.topcoder.com/stat?c=problem_statement&pm=10966)|564|2|3|||
 [FoxAndHandleEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12334)|563|2|1|||
