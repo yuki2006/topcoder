@@ -5,6 +5,7 @@ public class AkariDaisukiDiv2 {
 
 	public int countTuples(String S) {
 		int result = 0;
+		
 		for (int i =1; i < S.length() - 1; i++) {
 			for (int j = 1; i + j < S.length() - 1; j++) {
 				for (int k = i + j + 1; k + j < S.length(); k++)
@@ -13,7 +14,8 @@ public class AkariDaisukiDiv2 {
 					}
 			}
 
-		}
+		}		
+		
 		return result;
 
 	}
