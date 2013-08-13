@@ -5,6 +5,7 @@ import java.util.Collections;
 // SRM 588 DIV 2 - 500.0
 
 // 参考 http://82rensa.blogspot.jp/2013/08/srm588-div2-medium.html
+
 public class GUMIAndSongsDiv2 {
 	public int maxSongs(int[] duration, int[] tone, int T) {
 		int max = 0;

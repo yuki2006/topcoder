@@ -145,7 +145,7 @@ public class ArchiveParser {
 
 	private static String readAll(InputStream in) throws IOException {
 		StringBuilder builder = new StringBuilder();
-		BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+		BufferedReader reader = new BufferedReader(new InputStreamReader(in,"UTF-8"));
 		String line;
 		while ((line = reader.readLine()) != null) {
 			builder.append(line);

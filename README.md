@@ -1,10 +1,10 @@
 ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|
 :--|:--|:--|:--| :-- | :--|:--|
-[KeyDungeonDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12724)|588|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/KeyDungeonDiv2.java)
-[GUMIAndSongsDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12707)|588|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/GUMIAndSongsDiv2.java)
+[KeyDungeonDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12724)|588|2|1|ひらめきとビット全パターン|3|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/KeyDungeonDiv2.java)
+[GUMIAndSongsDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12707)|588|2|2|ちょっとだけ考える|1|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/GUMIAndSongsDiv2.java)
 [GameInDarknessDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12710)|588|2|3|||
-[InsertZ](http://community.topcoder.com/stat?c=problem_statement&pm=12700)|587|2|1|縺ｲ繧峨ａ縺上→邁｡蜊?12300|1|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/InsertZ.java)
-[JumpFurther](http://community.topcoder.com/stat?c=problem_statement&pm=12300)|587|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/JumpFurther.java)
+[InsertZ](http://community.topcoder.com/stat?c=problem_statement&pm=12700)|587|2|1|ひらめくと簡単|1|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/InsertZ.java)
+[JumpFurther](http://community.topcoder.com/stat?c=problem_statement&pm=12300)|587|2|2|よく考えてみるとひらめくかも|2|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/JumpFurther.java)
 [ThreeColorabilityEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12699)|587|2|3|||
 [TeamsSelection](http://community.topcoder.com/stat?c=problem_statement&pm=12696)|586|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TeamsSelection.java)
 [PiecewiseLinearFunctionDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12698)|586|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PiecewiseLinearFunctionDiv2.java)
@@ -57,7 +57,7 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|
 [Chopsticks](http://community.topcoder.com/stat?c=problem_statement&pm=12424)|570|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/Chopsticks.java)
 [RobotHerbDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12425)|570|2|2|||
 [CentaurCompanyDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12426)|570|2|3|||
-[TheJediTestDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12404)|569|2|1|莉墓ｧ倥ｒ繧医￥閠?∴繧?12351|3|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TheJediTestDiv2.java)
+[TheJediTestDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12404)|569|2|1|仕様をよく考える|3|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TheJediTestDiv2.java)
 [TheDeviceDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12399)|569|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TheDeviceDiv2.java)
 [MegaFactorialDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12400)|569|2|3|||
 [TheSimilarNumbers](http://community.topcoder.com/stat?c=problem_statement&pm=10553)|568|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TheSimilarNumbers.java)
@@ -69,8 +69,8 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|
 [PenguinTiles](http://community.topcoder.com/stat?c=problem_statement&pm=12335)|566|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PenguinTiles.java)
 [PenguinPals](http://community.topcoder.com/stat?c=problem_statement&pm=12355)|566|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PenguinPals.java)
 [FencingPenguinsEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12341)|566|2|3|||
-[ValueHistogram](http://community.topcoder.com/stat?c=problem_statement&pm=12275)|565|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/ValueHistogram.java)
-[MonstersValley2](http://community.topcoder.com/stat?c=problem_statement&pm=12351)|565|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/MonstersValley2.java)
+[ValueHistogram](http://community.topcoder.com/stat?c=problem_statement&pm=12275)|565|2|1|細かいところが難しい|2|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/ValueHistogram.java)
+[MonstersValley2](http://community.topcoder.com/stat?c=problem_statement&pm=12351)|565|2|2|計算量の見積もり、ビット判定|3|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/MonstersValley2.java)
 [DivisibleSequence](http://community.topcoder.com/stat?c=problem_statement&pm=12274)|565|2|3|||
 [FauxPalindromes](http://community.topcoder.com/stat?c=problem_statement&pm=12325)|564|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FauxPalindromes.java)
 [AlternateColors](http://community.topcoder.com/stat?c=problem_statement&pm=12343)|564|2|2|||
