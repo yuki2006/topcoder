@@ -8,7 +8,7 @@ public class GearsDiv2 {
 	private int r(int p) {
 		return p % charArrays.length;
 	}
-//アイデアの参考: http://snuke.hatenablog.com/entry/2013/08/27/214629
+	//アイデアの参考: http://snuke.hatenablog.com/entry/2013/08/27/214629
 	public int getmin(String Directions) {
 		int min = Integer.MAX_VALUE;
 		for (int j = 0; j < 2; j++) {
