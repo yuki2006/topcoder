@@ -1,25 +1,23 @@
-import java.util.Iterator;
 
 // Paste me into the FileEdit configuration dialog
 // SRM 564 DIV 2 - 250.0
 public class FauxPalindromes {
 	public String classifyIt(String word) {
-		String second = "";
-		char old = 0;
 		if (isPralidromes(word)) {
 			return "PALINDROME";
 		}
+		
+		String second = "";
+		char old = 0;
 		for (char c : word.toCharArray()) {
 			if (old != c) {
 				second += String.valueOf(c);
 			}
 			old = c;
-
 		}
 		if (!isPralidromes(second)) {
 			return "NOT EVEN FAUX";
 		}
-
 		return "FAUX";
 	}
 

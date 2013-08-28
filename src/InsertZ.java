@@ -3,8 +3,7 @@
 
 public class InsertZ {
    public String canTransform(String init, String goal) {
-		goal = goal.replaceAll("z", "");
-		if (init.equals(goal)){
+		if (init.equals(goal.replace("z", ""))){
 			return "Yes";
 		}
 		return "No";
