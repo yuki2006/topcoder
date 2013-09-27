@@ -4,7 +4,6 @@ import java.awt.Checkbox;
 // Single Round Match 590 - Round 1250.0
 public class FoxAndGomoku {
 	public String win(String[] board) {
-
 		for (int i = 0; i < board.length; i++) {
 			for (int j = 0; j < board[i].length(); j++) {
 				char c = board[i].charAt(j);

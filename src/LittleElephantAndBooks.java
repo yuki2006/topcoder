@@ -1,50 +1,33 @@
 import java.util.Arrays;
 
 // Paste me into the FileEdit configuration dialog
-// Single Round Match 589 - Round 1500.0
-public class GearsDiv2 {
-	private char[] charArrays;
-
-	private int r(int p) {
-		return p % charArrays.length;
-	}
-	//アイデアの参考: http://snuke.hatenablog.com/entry/2013/08/27/214629
-	public int getmin(String Directions) {
-		int min = Integer.MAX_VALUE;
-		for (int j = 0; j < 2; j++) {
-			charArrays = Directions.toCharArray();
-			int count = 0;
-			//最初と最後の文字が同じときは空白にする
-			if (j == 1) {
-				charArrays[0] = 0;
-				count++;
-			}
-			for (int i = 0; i < charArrays.length; i++) {
-				if (charArrays[i] == charArrays[r(i + 1)] && charArrays[i] != 0) {
-					charArrays[r(i + 1)] = 0;
-					count++;
-				}
-			}
-			min = Math.min(count, min);
+// Single Round Match 592 - Round 1250.0
+public class LittleElephantAndBooks {
+	public int getNumber(int[] pages, int number) {
+		Arrays.sort(pages);
+		int sum = 0;
+		for (int i = 0; i < number - 1; i++) {
+			sum += pages[i];
 		}
-
-		return min;
+		sum += pages[number];
+		return sum;
 	}
 
 	// BEGIN CUT HERE
 	public static void main(String[] args) {
 		if (args.length == 0) {
-			GearsDiv2Harness.run_test(-1);
+			LittleElephantAndBooksHarness.run_test(-1);
 		} else {
 			for (int i = 0; i < args.length; ++i)
-				GearsDiv2Harness.run_test(Integer.valueOf(args[i]));
+				LittleElephantAndBooksHarness
+						.run_test(Integer.valueOf(args[i]));
 		}
 	}
 	// END CUT HERE
 }
 
 // BEGIN CUT HERE
-class GearsDiv2Harness {
+class LittleElephantAndBooksHarness {
 	public static void run_test(int casenum) {
 		if (casenum != -1) {
 			if (runTestCase(casenum) == -1)
@@ -99,64 +82,57 @@ class GearsDiv2Harness {
 	static int runTestCase(int casenum__) {
 		switch (casenum__) {
 		case 0: {
-			String Directions = "LRRR";
-			int expected__ = 1;
-
-			return verifyCase(casenum__, expected__,
-					new GearsDiv2().getmin(Directions));
-		}
-		case 1: {
-			String Directions = "RRR";
+			int[] pages = { 1, 2 };
+			int number = 1;
 			int expected__ = 2;
 
 			return verifyCase(casenum__, expected__,
-					new GearsDiv2().getmin(Directions));
+					new LittleElephantAndBooks().getNumber(pages, number));
+		}
+		case 1: {
+			int[] pages = { 74, 7, 4, 47, 44 };
+			int number = 3;
+			int expected__ = 58;
+
+			return verifyCase(casenum__, expected__,
+					new LittleElephantAndBooks().getNumber(pages, number));
 		}
 		case 2: {
-			String Directions = "LRLR";
-			int expected__ = 0;
+			int[] pages = { 3, 1, 9, 7, 2, 8, 6, 4, 5 };
+			int number = 7;
+			int expected__ = 29;
 
 			return verifyCase(casenum__, expected__,
-					new GearsDiv2().getmin(Directions));
+					new LittleElephantAndBooks().getNumber(pages, number));
 		}
 		case 3: {
-			String Directions = "LRLLRRLLLRRRLLLL";
-			int expected__ = 6;
+			int[] pages = { 74, 86, 32, 13, 100, 67, 77 };
+			int number = 2;
+			int expected__ = 80;
 
 			return verifyCase(casenum__, expected__,
-					new GearsDiv2().getmin(Directions));
-		}
-		case 4: {
-			String Directions = "RRRRRRRLRRRRRRRLRLRLLRLRLRLRRLRLRLLLRLRLLRLLRRLRRR";
-			int expected__ = 14;
-
-			return verifyCase(casenum__, expected__,
-					new GearsDiv2().getmin(Directions));
+					new LittleElephantAndBooks().getNumber(pages, number));
 		}
 
 		// custom cases
 
-		case 5: {
-			String Directions = "RRLLRR";
-			int expected__ = 3;
-
-			return verifyCase(casenum__, expected__,
-					new GearsDiv2().getmin(Directions));
-		}
-
-		case 6: {
-			String Directions = "RRRRLLLRLLR";
-			int expected__ = 4;
-
-			return verifyCase(casenum__, expected__,
-					new GearsDiv2().getmin(Directions));
-		}
-
+		
+		  case 4: { int[] pages = {1,2,3,4,5,6}; 
+		  int number =4 ; int expected__ =11 ;
+		  
+		  return verifyCase(casenum__, expected__, new
+		  LittleElephantAndBooks().getNumber(pages, number)); }
 		/*
-		 * case 7: { String Directions = ; int expected__ = ;
+		 * case 5: { int[] pages = ; int number = ; int expected__ = ;
 		 * 
 		 * return verifyCase(casenum__, expected__, new
-		 * GearsDiv2().getmin(Directions)); }
+		 * LittleElephantAndBooks().getNumber(pages, number)); }
+		 */
+		/*
+		 * case 6: { int[] pages = ; int number = ; int expected__ = ;
+		 * 
+		 * return verifyCase(casenum__, expected__, new
+		 * LittleElephantAndBooks().getNumber(pages, number)); }
 		 */
 		default:
 			return -1;
