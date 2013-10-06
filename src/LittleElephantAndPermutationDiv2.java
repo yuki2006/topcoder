@@ -2,17 +2,18 @@
 // Single Round Match 592 - Round 1500.0
 public class LittleElephantAndPermutationDiv2 {
 	public long getNumber(int N, int K) {
-		int[] hit = new int[N];
-		int[] list = new int[N];
-		for (int i = 0; i < list.length; i++) {
-			list[i] = i + 1;
-		}
 		int p = 1;
 		for (int i = 1; i <= N; i++) {
 			p *= i;
 		}
 
-		return permutaion(hit, list, N, K)*p;
+		int[] hit = new int[N];
+		int[] list = new int[N];
+		for (int i = 0; i < list.length; i++) {
+			list[i] = i + 1;
+		}
+
+		return permutaion(hit, list, N, K) * p;
 	}
 
 	private long permutaion(int hit[], int list[], int count, int k) {

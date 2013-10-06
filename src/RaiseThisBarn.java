@@ -1,33 +1,41 @@
-import java.util.Arrays;
-
 // Paste me into the FileEdit configuration dialog
-// Single Round Match 592 - Round 1250.0
-public class LittleElephantAndBooks {
-	public int getNumber(int[] pages, int number) {
-		Arrays.sort(pages);
-		int sum = 0;
-		for (int i = 0; i < number - 1; i++) {
-			sum += pages[i];
+// Single Round Match 593 - Round 1250.0
+public class RaiseThisBarn {
+	public int calc(String str) {
+		int total = 0;
+		for (char c : str.toCharArray()) {
+			if (c == 'c') {
+				total++;
+			}
 		}
-		sum += pages[number];
-		return sum;
+		int result = 0;
+		int cCount = 0;
+		for (int i = 0; i < str.length() - 1; i++) {
+			if (str.charAt(i) == 'c') {
+				cCount++;
+			}
+			if (total == cCount * 2) {
+				result++;
+			}
+		}
+		return result;
+
 	}
 
 	// BEGIN CUT HERE
 	public static void main(String[] args) {
 		if (args.length == 0) {
-			LittleElephantAndBooksHarness.run_test(-1);
+			RaiseThisBarnHarness.run_test(-1);
 		} else {
 			for (int i = 0; i < args.length; ++i)
-				LittleElephantAndBooksHarness
-						.run_test(Integer.valueOf(args[i]));
+				RaiseThisBarnHarness.run_test(Integer.valueOf(args[i]));
 		}
 	}
 	// END CUT HERE
 }
 
 // BEGIN CUT HERE
-class LittleElephantAndBooksHarness {
+class RaiseThisBarnHarness {
 	public static void run_test(int casenum) {
 		if (casenum != -1) {
 			if (runTestCase(casenum) == -1)
@@ -82,58 +90,73 @@ class LittleElephantAndBooksHarness {
 	static int runTestCase(int casenum__) {
 		switch (casenum__) {
 		case 0: {
-			int[] pages = { 1, 2 };
-			int number = 1;
-			int expected__ = 2;
+			String str = "cc..c.c";
+			int expected__ = 3;
 
 			return verifyCase(casenum__, expected__,
-					new LittleElephantAndBooks().getNumber(pages, number));
+					new RaiseThisBarn().calc(str));
 		}
 		case 1: {
-			int[] pages = { 74, 7, 4, 47, 44 };
-			int number = 3;
-			int expected__ = 58;
+			String str = "c....c....c";
+			int expected__ = 0;
 
 			return verifyCase(casenum__, expected__,
-					new LittleElephantAndBooks().getNumber(pages, number));
+					new RaiseThisBarn().calc(str));
 		}
 		case 2: {
-			int[] pages = { 3, 1, 9, 7, 2, 8, 6, 4, 5 };
-			int number = 7;
-			int expected__ = 29;
+			String str = "............";
+			int expected__ = 11;
 
 			return verifyCase(casenum__, expected__,
-					new LittleElephantAndBooks().getNumber(pages, number));
+					new RaiseThisBarn().calc(str));
 		}
 		case 3: {
-			int[] pages = { 74, 86, 32, 13, 100, 67, 77 };
-			int number = 2;
-			int expected__ = 80;
+			String str = ".c.c...c..ccc.c..c.c.cc..ccc";
+			int expected__ = 3;
 
 			return verifyCase(casenum__, expected__,
-					new LittleElephantAndBooks().getNumber(pages, number));
-	
+					new RaiseThisBarn().calc(str));
 		}
+		case 4: {
+			String str = "cccc";
+			int expected__ = 1;
 
+			return verifyCase(casenum__, expected__,
+					new RaiseThisBarn().calc(str));
+		}
+		case 5: {
+			String str = "c..c";
+			int expected__ = 3;
+
+			return verifyCase(casenum__, expected__,
+					new RaiseThisBarn().calc(str));
+		}
+		case 6: {
+			String str = "..cc.";
+			int expected__ = 1;
+
+			return verifyCase(casenum__, expected__,
+					new RaiseThisBarn().calc(str));
+		}
 		// custom cases
 
-		
-		  case 4: { int[] pages = {1,2,3,4,5,6}; 
-		  int number =4 ; int expected__ =11 ;
-		  
-		  return verifyCase(casenum__, expected__, new
-		  LittleElephantAndBooks().getNumber(pages, number)); }
 		/*
-		 * case 5: { int[] pages = ; int number = ; int expected__ = ;
+		 * case 4: { String str = ; int expected__ = ;
 		 * 
 		 * return verifyCase(casenum__, expected__, new
-		 * LittleElephantAndBooks().getNumber(pages, number)); }
+		 * RaiseThisBarn().calc(str)); }
 		 */
 		/*
-		 * case 6: { int[] pages = ; int number = ; int expected__ = ;
+		 * case 5: { String str = ; int expected__ = ;
 		 * 
 		 * return verifyCase(casenum__, expected__, new
-		 * LittleElephantAndBooks().getNumber(pages, number)); }
+		 * RaiseThisBarn().calc(str)); }
+		 */
+		/*
+		 * case 6: { String str = ; int expected__ = ;
+		 * 
+		 * return verifyCase(casenum__, expected__, new
+		 * RaiseThisBarn().calc(str)); }
 		 */
 		default:
 			return -1;
