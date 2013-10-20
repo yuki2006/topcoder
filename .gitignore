@@ -1,3 +1,4 @@
+.project
 
 *.class
 
@@ -6,3 +7,4 @@
 *.war
 *.ear
 /bin
+.setting

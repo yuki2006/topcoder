@@ -1,0 +1,1 @@
+ls -n1 src | sed -e "s/.java//" |xargs -n1 -IJF grep -c JF etc/list.csv 

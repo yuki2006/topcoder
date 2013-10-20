@@ -1,11 +1,20 @@
 ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|
 :--|:--|:--|:--| :-- | :--|:--|
+[RaiseThisBarn](http://community.topcoder.com/stat?c=problem_statement&pm=12780)|593|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/RaiseThisBarn.java)
+[WolfDelaymaster](http://community.topcoder.com/stat?c=problem_statement&pm=12778)|593|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/WolfDelaymaster.java)
+[MayTheBestPetWin](http://community.topcoder.com/stat?c=problem_statement&pm=12779)|593|2|3|||
+[LittleElephantAndBooks](http://community.topcoder.com/stat?c=problem_statement&pm=12112)|592|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/LittleElephantAndBooks.java)
+[LittleElephantAndPermutationDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12759)|592|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/LittleElephantAndPermutationDiv2.java)
+[LittleElephantAndArray](http://community.topcoder.com/stat?c=problem_statement&pm=12704)|592|2|3|||
+[TheArithmeticProgression](http://community.topcoder.com/stat?c=problem_statement&pm=12755)|591|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TheArithmeticProgression.java)
+[ConvertibleStrings](http://community.topcoder.com/stat?c=problem_statement&pm=12754)|591|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/ConvertibleStrings.java)
+[YetAnotherTwoTeamsProblem](http://community.topcoder.com/stat?c=problem_statement&pm=12750)|591|2|3|||
 [FoxAndGomoku](http://community.topcoder.com/stat?c=problem_statement&pm=12744)|590|2|1|色々テクニック使わないときつい|4|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FoxAndGomoku.java)
 [FoxAndGo](http://community.topcoder.com/stat?c=problem_statement&pm=12743)|590|2|2|アイデアより実装力|2|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FoxAndGo.java)
 [FoxAndShogi](http://community.topcoder.com/stat?c=problem_statement&pm=12745)|590|2|3|||
 [GooseTattarrattatDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12733)|589|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/GooseTattarrattatDiv2.java)
 [GearsDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12732)|589|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/GearsDiv2.java)
-[FlippingBitsDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12731)|589|2|3|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FlippingBitsDiv2.java)
+[FlippingBitsDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12731)|589|2|3|||
 [KeyDungeonDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12724)|588|2|1|ひらめきとビット全パターン|3|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/KeyDungeonDiv2.java)
 [GUMIAndSongsDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12707)|588|2|2|ちょっとだけ考える|1|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/GUMIAndSongsDiv2.java)
 [GameInDarknessDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12710)|588|2|3|||
@@ -645,8 +654,8 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|
 [PunctuationCleaner](http://community.topcoder.com/stat?c=problem_statement&pm=8378)|376|2|1|||
 [Trainyard](http://community.topcoder.com/stat?c=problem_statement&pm=6555)|376|2|2|||
 [JollyJumpers](http://community.topcoder.com/stat?c=problem_statement&pm=8261)|376|2|3|||
-[MixtureDensity](http://community.topcoder.com/stat?c=problem_statement&pm=8269)|375|2|1|||
-[DukeOnChessBoard](http://community.topcoder.com/stat?c=problem_statement&pm=8268)|375|2|2|||
+[MixtureDensity](http://community.topcoder.com/stat?c=problem_statement&pm=8269)|375|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/MixtureDensity.java)
+[DukeOnChessBoard](http://community.topcoder.com/stat?c=problem_statement&pm=8268)|375|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/DukeOnChessBoard.java)
 [DivisibleByDigits](http://community.topcoder.com/stat?c=problem_statement&pm=8318)|375|2|3|||
 [HockeyFault](http://community.topcoder.com/stat?c=problem_statement&pm=8224)|374|2|1|||
 [SyllableSorting](http://community.topcoder.com/stat?c=problem_statement&pm=8374)|374|2|2|||
