@@ -1,0 +1,1 @@
+git filter-branch --commit-filter 'GIT_AUTHOR_NAME="yuki2006"; GIT_AUTHOR_EMAIL="yagfair@gmail.com"; git commit-tree "$@";'HEAD
