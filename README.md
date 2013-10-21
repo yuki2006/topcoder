@@ -1,5 +1,8 @@
 ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|
 :--|:--|:--|:--| :-- | :--|:--|
+[FoxAndClassroom](http://community.topcoder.com/stat?c=problem_statement&pm=12811)|594|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FoxAndClassroom.java)
+[AstronomicalRecordsEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12812)|594|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/AstronomicalRecordsEasy.java)
+[FoxAndGo2](http://community.topcoder.com/stat?c=problem_statement&pm=12809)|594|2|3|||
 [RaiseThisBarn](http://community.topcoder.com/stat?c=problem_statement&pm=12780)|593|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/RaiseThisBarn.java)
 [WolfDelaymaster](http://community.topcoder.com/stat?c=problem_statement&pm=12778)|593|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/WolfDelaymaster.java)
 [MayTheBestPetWin](http://community.topcoder.com/stat?c=problem_statement&pm=12779)|593|2|3|||
