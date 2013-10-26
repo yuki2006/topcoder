@@ -3,19 +3,32 @@
 
 public class FoxAndClassroom {
 	public String ableTo(int n, int m) {
-		boolean[][] table = new boolean[n][m];
-		int x = 0, y = 0;
-		int count = 0;
-		while (table[x][y] == false) {
-			table[x][y] = true;
-			x = (x + 1) % table.length;
-			y = (y + 1) % table[0].length;
-			count++;
+		// boolean[][] table = new boolean[n][m];
+		// int x = 0, y = 0;
+		// int count = 0;
+		// while (table[x][y] == false) {
+		// table[x][y] = true;
+		// x = (x + 1) % table.length;
+		// y = (y + 1) % table[0].length;
+		// count++;
+		// }
+		// if (count == n * m) {
+		// return "Possible";
+		// }
+		// return "Impossible";
+		return gcd(n, m) == 1 ? "Possible" : "Impossible";
+	}
+
+	int gcd(int x, int y) {
+		while (true) {
+			int z = x % y;
+			if (z == 0) {
+				//上書きされるのでここで返す。
+				return y;
+			}			
+			x = y;
+			y = z;
 		}
-		if (count == n * m) {
-			return "Possible";
-		}
-		return "Impossible";
 	}
 
 	// BEGIN CUT HERE
@@ -35,7 +48,8 @@ class FoxAndClassroomHarness {
 	public static void run_test(int casenum) {
 		if (casenum != -1) {
 			if (runTestCase(casenum) == -1)
-				System.err.println("Illegal input! Test case " + casenum + " does not exist.");
+				System.err.println("Illegal input! Test case " + casenum
+						+ " does not exist.");
 			return;
 		}
 
@@ -54,7 +68,8 @@ class FoxAndClassroomHarness {
 		if (total == 0) {
 			System.err.println("No test cases run.");
 		} else if (correct < total) {
-			System.err.println("Some cases FAILED (passed " + correct + " of " + total + ").");
+			System.err.println("Some cases FAILED (passed " + correct + " of "
+					+ total + ").");
 		} else {
 			System.err.println("All " + total + " tests passed!");
 		}
@@ -88,81 +103,76 @@ class FoxAndClassroomHarness {
 			int m = 3;
 			String expected__ = "Possible";
 
-			return verifyCase(casenum__, expected__, new FoxAndClassroom().ableTo(n, m));
+			return verifyCase(casenum__, expected__,
+					new FoxAndClassroom().ableTo(n, m));
 		}
 		case 1: {
 			int n = 2;
 			int m = 2;
 			String expected__ = "Impossible";
 
-			return verifyCase(casenum__, expected__, new FoxAndClassroom().ableTo(n, m));
+			return verifyCase(casenum__, expected__,
+					new FoxAndClassroom().ableTo(n, m));
 		}
 		case 2: {
 			int n = 4;
 			int m = 6;
 			String expected__ = "Impossible";
 
-			return verifyCase(casenum__, expected__, new FoxAndClassroom().ableTo(n, m));
+			return verifyCase(casenum__, expected__,
+					new FoxAndClassroom().ableTo(n, m));
 		}
 		case 3: {
 			int n = 3;
 			int m = 6;
 			String expected__ = "Impossible";
 
-			return verifyCase(casenum__, expected__, new FoxAndClassroom().ableTo(n, m));
+			return verifyCase(casenum__, expected__,
+					new FoxAndClassroom().ableTo(n, m));
 		}
 		case 4: {
 			int n = 5;
 			int m = 7;
 			String expected__ = "Possible";
 
-			return verifyCase(casenum__, expected__, new FoxAndClassroom().ableTo(n, m));
+			return verifyCase(casenum__, expected__,
+					new FoxAndClassroom().ableTo(n, m));
 		}
 		case 5: {
 			int n = 10;
 			int m = 10;
 			String expected__ = "Impossible";
 
-			return verifyCase(casenum__, expected__, new FoxAndClassroom().ableTo(n, m));
+			return verifyCase(casenum__, expected__,
+					new FoxAndClassroom().ableTo(n, m));
 		}
 		case 6: {
 			int n = 9;
 			int m = 10;
 			String expected__ = "Possible";
 
-			return verifyCase(casenum__, expected__, new FoxAndClassroom().ableTo(n, m));
+			return verifyCase(casenum__, expected__,
+					new FoxAndClassroom().ableTo(n, m));
 		}
 		// custom cases
 
 		/*
-		 * case 6: {
-		 * int n = ;
-		 * int m = ;
-		 * String expected__ = ;
+		 * case 6: { int n = ; int m = ; String expected__ = ;
 		 * 
 		 * return verifyCase(casenum__, expected__, new
-		 * FoxAndClassroom().ableTo(n, m));
-		 * }
+		 * FoxAndClassroom().ableTo(n, m)); }
 		 */
 		/*
-		 * case 7: {
-		 * int n = ;
-		 * int m = ;
-		 * String expected__ = ;
+		 * case 7: { int n = ; int m = ; String expected__ = ;
 		 * 
 		 * return verifyCase(casenum__, expected__, new
-		 * FoxAndClassroom().ableTo(n, m));
-		 * }
+		 * FoxAndClassroom().ableTo(n, m)); }
 		 */
 		/*
-		 * case 8: {
-		 * int n = ;
-		 * int m = ;
-		 * String expected__ = ;
+		 * case 8: { int n = ; int m = ; String expected__ = ;
 		 * 
 		 * return verifyCase(casenum__, expected__, new
-		 * FoxAndClassroom().ableTo(n, m));
-		 * }
+		 * FoxAndClassroom().ableTo(n, m)); }
 		 */
 		default:
 			return -1;
