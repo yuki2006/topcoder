@@ -1,7 +1,4 @@
-import java.util.*;
-import java.util.regex.*;
-import java.text.*;
-import java.math.*;
+import java.util.Arrays;
 
 public class LittleElephantAndDouble
 {
