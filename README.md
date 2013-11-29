@@ -1,5 +1,14 @@
 ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|
 :--|:--|:--|:--| :-- | :--|:--|
+[LittleElephantAndDouble](http://community.topcoder.com/stat?c=problem_statement&pm=12117)|597|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/LittleElephantAndDouble.java)
+[LittleElephantAndString](http://community.topcoder.com/stat?c=problem_statement&pm=12854)|597|2|2|||
+[LittleElephantAndSubset](http://community.topcoder.com/stat?c=problem_statement&pm=12761)|597|2|3|||
+[FoxAndSightseeing](http://community.topcoder.com/stat?c=problem_statement&pm=12836)|596|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FoxAndSightseeing.java)
+[ColorfulRoad](http://community.topcoder.com/stat?c=problem_statement&pm=12837)|596|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/ColorfulRoad.java)
+[SparseFactorialDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12838)|596|2|3|||
+[LittleElephantAndBallsAgain](http://community.topcoder.com/stat?c=problem_statement&pm=12794)|595|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/LittleElephantAndBallsAgain.java)
+[LittleElephantAndIntervalsDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12823)|595|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/LittleElephantAndIntervalsDiv2.java)
+[LittleElephantAndXor](http://community.topcoder.com/stat?c=problem_statement&pm=12623)|595|2|3|||
 [FoxAndClassroom](http://community.topcoder.com/stat?c=problem_statement&pm=12811)|594|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FoxAndClassroom.java)
 [AstronomicalRecordsEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12812)|594|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/AstronomicalRecordsEasy.java)
 [FoxAndGo2](http://community.topcoder.com/stat?c=problem_statement&pm=12809)|594|2|3|||
@@ -201,7 +210,7 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|
 [MinCostPalindrome](http://community.topcoder.com/stat?c=problem_statement&pm=11727)|528|2|1|||
 [Cut](http://community.topcoder.com/stat?c=problem_statement&pm=11564)|528|2|2|||
 [Mosquitoes](http://community.topcoder.com/stat?c=problem_statement&pm=11654)|528|2|3|||
-[P8XMatrixTransformation](http://community.topcoder.com/stat?c=problem_statement&pm=11056)|527|2|1|||
+[P8XMatrixTransformation](http://community.topcoder.com/stat?c=problem_statement&pm=11056)|527|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/P8XMatrixTransformation.java)
 [P8XGraphBuilder](http://community.topcoder.com/stat?c=problem_statement&pm=11308)|527|2|2|||
 [P8XCoinChangeAnother](http://community.topcoder.com/stat?c=problem_statement&pm=11222)|527|2|3|||
 [MagicStonesStore](http://community.topcoder.com/stat?c=problem_statement&pm=11724)|526.5|2|1|||
@@ -732,8 +741,8 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|
 [RoomNumber](http://community.topcoder.com/stat?c=problem_statement&pm=6764)|351|2|1|||
 [CoinsExchange](http://community.topcoder.com/stat?c=problem_statement&pm=7773)|351|2|2|||
 [InsertSort](http://community.topcoder.com/stat?c=problem_statement&pm=4844)|351|2|3|||
-[DistanceBetweenStrings](http://community.topcoder.com/stat?c=problem_statement&pm=7606)|350|2|1|||
-[SumsOfPerfectPowers](http://community.topcoder.com/stat?c=problem_statement&pm=7613)|350|2|2|||
+[DistanceBetweenStrings](http://community.topcoder.com/stat?c=problem_statement&pm=7606)|350|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/DistanceBetweenStrings.java)
+[SumsOfPerfectPowers](http://community.topcoder.com/stat?c=problem_statement&pm=7613)|350|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/SumsOfPerfectPowers.java)
 [BagsQuiz](http://community.topcoder.com/stat?c=problem_statement&pm=7587)|350|2|3|||
 [DocumentSearch](http://community.topcoder.com/stat?c=problem_statement&pm=7763)|349|2|1|||
 [RadarFinder](http://community.topcoder.com/stat?c=problem_statement&pm=7766)|349|2|2|||
@@ -930,7 +939,7 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|
 [Truckloads](http://community.topcoder.com/stat?c=problem_statement&pm=6011)|284|2|1|||
 [Measures](http://community.topcoder.com/stat?c=problem_statement&pm=2267)|284|2|2|||
 [SnakeCount](http://community.topcoder.com/stat?c=problem_statement&pm=4435)|284|2|3|||
-[DiagonalDisproportion](http://community.topcoder.com/stat?c=problem_statement&pm=6003)|283|2|1|||
+[DiagonalDisproportion](http://community.topcoder.com/stat?c=problem_statement&pm=6003)|283|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/DiagonalDisproportion.java)
 [PowerSupply](http://community.topcoder.com/stat?c=problem_statement&pm=5969)|283|2|2|||
 [FactorialGCD](http://community.topcoder.com/stat?c=problem_statement&pm=5963)|283|2|3|||
 [RunLengthEncoding](http://community.topcoder.com/stat?c=problem_statement&pm=5983)|281|2|1|||
@@ -963,8 +972,8 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|
 [HammingDistance](http://community.topcoder.com/stat?c=problem_statement&pm=5884)|272|2|1|||
 [FewestFactors](http://community.topcoder.com/stat?c=problem_statement&pm=5886)|272|2|2|||
 [VectorPolygon](http://community.topcoder.com/stat?c=problem_statement&pm=5885)|272|2|3|||
-[CheckFunction](http://community.topcoder.com/stat?c=problem_statement&pm=4788)|271|2|1|||
-[BlackWhitePlane](http://community.topcoder.com/stat?c=problem_statement&pm=4497)|271|2|2|||
+[CheckFunction](http://community.topcoder.com/stat?c=problem_statement&pm=4788)|271|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/CheckFunction.java)
+[BlackWhitePlane](http://community.topcoder.com/stat?c=problem_statement&pm=4497)|271|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/BlackWhitePlane.java)
 [OneFight](http://community.topcoder.com/stat?c=problem_statement&pm=4518)|271|2|3|||
 [BuyingCheap](http://community.topcoder.com/stat?c=problem_statement&pm=4754)|270|2|1|||
 [TippingWaiters](http://community.topcoder.com/stat?c=problem_statement&pm=4745)|270|2|2|||
@@ -1191,9 +1200,9 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|
 [Rounder](http://community.topcoder.com/stat?c=problem_statement&pm=2016)|195|2|1|||
 [FanFailure](http://community.topcoder.com/stat?c=problem_statement&pm=2235)|195|2|2|||
 [ChangePurse](http://community.topcoder.com/stat?c=problem_statement&pm=2442)|195|2|3|||
-[Soccer](http://community.topcoder.com/stat?c=problem_statement&pm=1650)|194|2|1|||
-[ThirtyOne](http://community.topcoder.com/stat?c=problem_statement&pm=2422)|194|2|2|||
-[DiskScheduler](http://community.topcoder.com/stat?c=problem_statement&pm=2387)|194|2|3|||
+[Soccer](http://community.topcoder.com/stat?c=problem_statement&pm=1650)|194|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/Soccer.java)
+[ThirtyOne](http://community.topcoder.com/stat?c=problem_statement&pm=2422)|194|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/ThirtyOne.java)
+[DiskScheduler](http://community.topcoder.com/stat?c=problem_statement&pm=2387)|194|2|3|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/DiskScheduler.java)
 [BoxLoader](http://community.topcoder.com/stat?c=problem_statement&pm=2403)|192|2|1|||
 [BigCube](http://community.topcoder.com/stat?c=problem_statement&pm=2823)|192|2|2|||
 [EigenVector](http://community.topcoder.com/stat?c=problem_statement&pm=2423)|192|2|3|||
