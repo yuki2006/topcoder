@@ -285,9 +285,9 @@ public class ProblemStats implements Serializable {
 				hit = true;
 			}
 		}
-//		if (!hit) {
-			builder.append("|");
-//		}
+		if (!hit) {
+			builder.append("||");
+		}
 		boolean hasJavaFile=false;
 		boolean hasPythonFile=false;
 		for (File file : files) {
