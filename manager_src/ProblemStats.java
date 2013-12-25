@@ -247,8 +247,8 @@ public class ProblemStats implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Problem[className=" + className + ",problemId=" + problemId //$NON-NLS-1$ //$NON-NLS-2$
-				+ getFieldString(COLUMN_CONTEST_NAME) + "," + getDiv2Level() + "]"; //$NON-NLS-1$
+		return "Problem[className=" + className + "|problemId=" + problemId //$NON-NLS-1$ //$NON-NLS-2$
+				+ getFieldString(COLUMN_CONTEST_NAME) + "|" + getDiv2Level() + "]"; //$NON-NLS-1$
 	}
 
 	/**
@@ -257,15 +257,15 @@ public class ProblemStats implements Serializable {
 	 */
 	public String toCSVString(List<CommentStats> commentList) {
 		StringBuilder builder = new StringBuilder();
-		builder.append(problemId + "," + className + "," + "2" + "," + div2Level + ",");
+		builder.append(problemId + "|" + className + "|" + "2" + "|" + div2Level + "|");
 
 		for (CommentStats commnetStats : commentList) {
 			if (commnetStats.getId() == problemId) {
-				builder.append(commnetStats.getString() + "," + commnetStats.getLevel());
+				builder.append(commnetStats.getString() + "|" + commnetStats.getLevel());
 				return builder.toString();
 			}
 		}
-		builder.append(",");
+		builder.append("|");
 		return builder.toString();
 	}
 
@@ -277,11 +277,11 @@ public class ProblemStats implements Serializable {
 	public String toMDString(List<CommentStats> commentList, File[] files) {
 		StringBuilder builder = new StringBuilder();
 		builder.append("[" + className + "](http://community.topcoder.com/stat?c=problem_statement&pm=" + problemId
-				+ ")" + "," + getSRMNumber() + "," + "2" + "," + div2Level + ",");
+				+ ")" + "|" + getSRMNumber() + "|" + "2" + "|" + div2Level + "|");
 		boolean hit = false;
 		for (CommentStats commnetStats : commentList) {
 			if (commnetStats.getId() == problemId) {
-				builder.append(commnetStats.getString() + "," + commnetStats.getLevel() + ",");
+				builder.append(commnetStats.getString() + "|" + commnetStats.getLevel() + "|");
 				hit = true;
 			}
 		}
@@ -301,7 +301,7 @@ public class ProblemStats implements Serializable {
 		if (hasJavaFile){
 			builder.append("[ソース](https://github.com/yuki2006/topcoder/blob/master/src/" + className + ".java)");
 		}
-		builder.append(",");
+		builder.append("|");
 		if (hasPythonFile){
 			builder.append("[ソース](https://github.com/yuki2006/topcoder/blob/master/src/" + className + ".py)");
 		}	
