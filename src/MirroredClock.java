@@ -5,27 +5,14 @@ public class MirroredClock {
 	public String whatTimeIsIt(String time) {
 		String[] split = time.split(":");
 		int hour = Integer.valueOf(split[0]);
-		int second = Integer.valueOf(split[1]);
-		if (second > 0) {
+		int minite = Integer.valueOf(split[1]);
+		if (minite > 0) {
 			hour++;
 		}
 		hour = (12 - hour) % 12;
-		second = (60 - second) % 60;
+		minite = (60 - minite) % 60;
 
-		// String out = "";
-		// if (hour < 10) {
-		// out += "0";
-		// }
-		// out += hour;
-		// out += ":";
-		//
-		// if (second < 10) {
-		// out += "0";
-		// }
-		// out += second;
-		// return out;
-
-		return String.format("%02d:%02d", hour, second);
+		return String.format("%02d:%02d", hour, minite);
 	}
 
 	// BEGIN CUT HERE

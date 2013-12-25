@@ -51,6 +51,8 @@ public class FactorialGCD
 	private static boolean KawigiEdit_RunTest(int testNum, int p0, int p1, boolean hasAnswer, int p2) {
 		System.out.print("Test " + testNum + ": [" + p0 + "," + p1);
 		System.out.println("]");
+
+
 		FactorialGCD obj;
 		int answer;
 		obj = new FactorialGCD();

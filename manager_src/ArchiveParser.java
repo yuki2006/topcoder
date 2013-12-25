@@ -50,8 +50,8 @@ public class ArchiveParser {
 		File[] files = dir.listFiles();
 
 		PrintStream printStream = new PrintStream(new File("README.md"));
-		printStream.println("ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード|");
-		printStream.println(":--|:--|:--|:--| :-- | :--|:--|");
+		printStream.println("ClassName,SRM,Div,Level,コメント,自己評価,ソースコード(Java),ソースコード(Python)");
+//		printStream.println(":--|:--|:--|:--| :-- | :--|:--|");
 
 		for (ProblemStats problemStats : problemStatsList) {
 			if (problemStats.getContestName().contains("SRM")) {

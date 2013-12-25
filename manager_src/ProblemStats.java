@@ -277,22 +277,34 @@ public class ProblemStats implements Serializable {
 	public String toMDString(List<CommentStats> commentList, File[] files) {
 		StringBuilder builder = new StringBuilder();
 		builder.append("[" + className + "](http://community.topcoder.com/stat?c=problem_statement&pm=" + problemId
-				+ ")" + "|" + getSRMNumber() + "|" + "2" + "|" + div2Level + "|");
+				+ ")" + "," + getSRMNumber() + "," + "2" + "," + div2Level + ",");
 		boolean hit = false;
 		for (CommentStats commnetStats : commentList) {
 			if (commnetStats.getId() == problemId) {
-				builder.append(commnetStats.getString() + "|" + commnetStats.getLevel() + "|");
+				builder.append(commnetStats.getString() + "," + commnetStats.getLevel() + ",");
 				hit = true;
 			}
 		}
-		if (!hit) {
-			builder.append("||");
-		}
+//		if (!hit) {
+			builder.append(",");
+//		}
+		boolean hasJavaFile=false;
+		boolean hasPythonFile=false;
 		for (File file : files) {
 			if (file.getName().equals(className + ".java")) {
-				builder.append("[ソース](https://github.com/yuki2006/topcoder/blob/master/src/" + className + ".java)");
+				hasJavaFile=true;
+			}
+			if (file.getName().equals(className + ".py")) {
+				hasPythonFile=true;
 			}
 		}
+		if (hasJavaFile){
+			builder.append("[ソース](https://github.com/yuki2006/topcoder/blob/master/src/" + className + ".java)");
+		}
+		builder.append(",");
+		if (hasPythonFile){
+			builder.append("[ソース](https://github.com/yuki2006/topcoder/blob/master/src/" + className + ".py)");
+		}	
 		return builder.toString();
 	}
 

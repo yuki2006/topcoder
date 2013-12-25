@@ -3,7 +3,6 @@ import string
 
 class FoxAndFencingEasy:
     def WhoCanWin(self, mov1, mov2, d):
-        
         return
 
 # BEGIN KAWIGIEDIT TESTING
