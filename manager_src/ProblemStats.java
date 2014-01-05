@@ -247,8 +247,8 @@ public class ProblemStats implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Problem[className=" + className + ",problemId=" + problemId //$NON-NLS-1$ //$NON-NLS-2$
-				+ getFieldString(COLUMN_CONTEST_NAME) + "," + getDiv2Level() + "]"; //$NON-NLS-1$
+		return "Problem[className=" + className + "|problemId=" + problemId //$NON-NLS-1$ //$NON-NLS-2$
+				+ getFieldString(COLUMN_CONTEST_NAME) + "|" + getDiv2Level() + "]"; //$NON-NLS-1$
 	}
 
 	/**
@@ -257,15 +257,15 @@ public class ProblemStats implements Serializable {
 	 */
 	public String toCSVString(List<CommentStats> commentList) {
 		StringBuilder builder = new StringBuilder();
-		builder.append(problemId + "," + className + "," + "2" + "," + div2Level + ",");
+		builder.append(problemId + "|" + className + "|" + "2" + "|" + div2Level + "|");
 
 		for (CommentStats commnetStats : commentList) {
 			if (commnetStats.getId() == problemId) {
-				builder.append(commnetStats.getString() + "," + commnetStats.getLevel());
+				builder.append(commnetStats.getString() + "|" + commnetStats.getLevel());
 				return builder.toString();
 			}
 		}
-		builder.append(",");
+		builder.append("|");
 		return builder.toString();
 	}
 
@@ -288,11 +288,23 @@ public class ProblemStats implements Serializable {
 		if (!hit) {
 			builder.append("||");
 		}
+		boolean hasJavaFile=false;
+		boolean hasPythonFile=false;
 		for (File file : files) {
 			if (file.getName().equals(className + ".java")) {
-				builder.append("[ソース](https://github.com/yuki2006/topcoder/blob/master/src/" + className + ".java)");
+				hasJavaFile=true;
+			}
+			if (file.getName().equals(className + ".py")) {
+				hasPythonFile=true;
 			}
 		}
+		if (hasJavaFile){
+			builder.append("[ソース](https://github.com/yuki2006/topcoder/blob/master/src/" + className + ".java)");
+		}
+		builder.append("|");
+		if (hasPythonFile){
+			builder.append("[ソース](https://github.com/yuki2006/topcoder/blob/master/src/" + className + ".py)");
+		}	
 		return builder.toString();
 	}
 
