@@ -10,7 +10,7 @@ class ColorfulRoad:
 		for i in range(l):
 			for j in range(i+1,l):
 					if (color.index(road[i])+1)%3==color.index(road[j]):
-					dp[j]=min(dp[i]+(j-i)**2,dp[j])
+						dp[j]=min(dp[i]+(j-i)**2,dp[j])
 		if dp[l-1]==1000000000:
 			return -1
 		return dp[l-1]
