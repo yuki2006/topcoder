@@ -9,7 +9,7 @@ public class WinterAndMandarins
 	{
 		Arrays.sort(bags);
 		int min = Integer.MAX_VALUE;
-		for (int i = 0; i + K - 1 < bags.length; i++) {
+		for (int i = 0; i + (K - 1) < bags.length; i++) {
 			int diff = bags[i + K - 1] - bags[i];
 			min = Math.min(diff, min);
 		}
