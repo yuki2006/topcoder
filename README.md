@@ -1,17 +1,29 @@
 ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード(Java)|ソースコード(Python)
 :--|:--|:--|:--| :-- | :--|:--|:--|
+[EllysSubstringSorter](http://community.topcoder.com/stat?c=problem_statement&pm=12977)|606|2|1||||
+[EllysNumberGuessing](http://community.topcoder.com/stat?c=problem_statement&pm=12975)|606|2|2||||
+[EllysCandyGame](http://community.topcoder.com/stat?c=problem_statement&pm=12394)|606|2|3||||
+[AlienAndPassword](http://community.topcoder.com/stat?c=problem_statement&pm=12950)|605|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/AlienAndPassword.java)|
+[AlienAndGame](http://community.topcoder.com/stat?c=problem_statement&pm=12821)|605|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/AlienAndGame.java)|
+[AlienAndSetDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12954)|605|2|3||||
+[FoxAndWord](http://community.topcoder.com/stat?c=problem_statement&pm=12953)|604|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FoxAndWord.java)|
+[PowerOfThreeEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12952)|604|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PowerOfThreeEasy.java)|
+[FoxConnection2](http://community.topcoder.com/stat?c=problem_statement&pm=12951)|604|2|3|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FoxConnection2.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FoxConnection2.py)
+[MiddleCode](http://community.topcoder.com/stat?c=problem_statement&pm=12940)|603|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/MiddleCode.java)|
+[SplitIntoPairs](http://community.topcoder.com/stat?c=problem_statement&pm=12939)|603|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/SplitIntoPairs.java)|
+[GraphWalkWithProbabilities](http://community.topcoder.com/stat?c=problem_statement&pm=12908)|603|2|3|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/GraphWalkWithProbabilities.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/GraphWalkWithProbabilities.py)
 [TypoCoderDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12927)|602|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TypoCoderDiv2.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TypoCoderDiv2.py)
 [PilingRectsDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12928)|602|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PilingRectsDiv2.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PilingRectsDiv2.py)
 [BlackBoxDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12929)|602|2|3||||
 [WinterAndMandarins](http://community.topcoder.com/stat?c=problem_statement&pm=12858)|601|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/WinterAndMandarins.java)|
 [WinterAndCandies](http://community.topcoder.com/stat?c=problem_statement&pm=12859)|601|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/WinterAndCandies.java)|
 [WinterAndReindeers](http://community.topcoder.com/stat?c=problem_statement&pm=12872)|601|2|3|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/WinterAndReindeers.java)|
-[TheShuttles](http://community.topcoder.com/stat?c=problem_statement&pm=12824)|600|2|1||||
-[ORSolitaireDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12890)|600|2|2||||
+[TheShuttles](http://community.topcoder.com/stat?c=problem_statement&pm=12824)|600|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TheShuttles.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TheShuttles.py)
+[ORSolitaireDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12890)|600|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/ORSolitaireDiv2.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/ORSolitaireDiv2.py)
 [PalindromeMatrixDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12876)|600|2|3||||
 [MiniatureDachshund](http://community.topcoder.com/stat?c=problem_statement&pm=12869)|599|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/MiniatureDachshund.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/MiniatureDachshund.py)
 [BigFatInteger2](http://community.topcoder.com/stat?c=problem_statement&pm=12870)|599|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/BigFatInteger2.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/BigFatInteger2.py)
-[SimilarNames2](http://community.topcoder.com/stat?c=problem_statement&pm=12871)|599|2|3|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/SimilarNames2.java)|
+[SimilarNames2](http://community.topcoder.com/stat?c=problem_statement&pm=12871)|599|2|3|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/SimilarNames2.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/SimilarNames2.py)
 [ErasingCharacters](http://community.topcoder.com/stat?c=problem_statement&pm=12863)|598|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/ErasingCharacters.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/ErasingCharacters.py)
 [BinPackingEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12862)|598|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/BinPackingEasy.java)|
 [FoxAndFencingEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12414)|598|2|3|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FoxAndFencingEasy.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FoxAndFencingEasy.py)
@@ -51,7 +63,7 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード(Java)|ソースコード(Pyt
 [TeamsSelection](http://community.topcoder.com/stat?c=problem_statement&pm=12696)|586|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TeamsSelection.java)|
 [PiecewiseLinearFunctionDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12698)|586|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PiecewiseLinearFunctionDiv2.java)|
 [StringWeightDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12695)|586|2|3||||
-[LISNumberDivTwo](http://community.topcoder.com/stat?c=problem_statement&pm=12446)|585|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/LISNumberDivTwo.java)|
+[LISNumberDivTwo](http://community.topcoder.com/stat?c=problem_statement&pm=12446)|585|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/LISNumberDivTwo.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/LISNumberDivTwo.py)
 [TrafficCongestionDivTwo](http://community.topcoder.com/stat?c=problem_statement&pm=12697)|585|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TrafficCongestionDivTwo.java)|
 [EnclosingTriangleColorful](http://community.topcoder.com/stat?c=problem_statement&pm=12694)|585|2|3||||
 [TopFox](http://community.topcoder.com/stat?c=problem_statement&pm=12643)|584|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TopFox.java)|
@@ -117,11 +129,11 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード(Java)|ソースコード(Pyt
 [FauxPalindromes](http://community.topcoder.com/stat?c=problem_statement&pm=12325)|564|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FauxPalindromes.java)|
 [AlternateColors](http://community.topcoder.com/stat?c=problem_statement&pm=12343)|564|2|2||||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/AlternateColors.py)
 [KnightCircuit](http://community.topcoder.com/stat?c=problem_statement&pm=10966)|564|2|3||||
-[FoxAndHandleEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12334)|563|2|1||||
-[CoinsGameEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12332)|563|2|2||||
+[FoxAndHandleEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12334)|563|2|1||||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FoxAndHandleEasy.py)
+[CoinsGameEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12332)|563|2|2||||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/CoinsGameEasy.py)
 [SpellCardsEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12333)|563|2|3||||
-[CucumberMarket](http://community.topcoder.com/stat?c=problem_statement&pm=12319)|562|2|1||||
-[PastingPaintingDivTwo](http://community.topcoder.com/stat?c=problem_statement&pm=12318)|562|2|2||||
+[CucumberMarket](http://community.topcoder.com/stat?c=problem_statement&pm=12319)|562|2|1||||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/CucumberMarket.py)
+[PastingPaintingDivTwo](http://community.topcoder.com/stat?c=problem_statement&pm=12318)|562|2|2||||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PastingPaintingDivTwo.py)
 [RandomOption](http://community.topcoder.com/stat?c=problem_statement&pm=12315)|562|2|3||||
 [FoxAndVacation](http://community.topcoder.com/stat?c=problem_statement&pm=11813)|561|2|1||||
 [ICPCBalloons](http://community.topcoder.com/stat?c=problem_statement&pm=12314)|561|2|2||||
@@ -306,7 +318,7 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード(Java)|ソースコード(Pyt
 [ToastXRaspberry](http://community.topcoder.com/stat?c=problem_statement&pm=11151)|503|2|1||||
 [ToastXToast](http://community.topcoder.com/stat?c=problem_statement&pm=11204)|503|2|2||||
 [KingdomXCitiesandVillagesAnother](http://community.topcoder.com/stat?c=problem_statement&pm=10835)|503|2|3||||
-[TheProgrammingContestDivTwo](http://community.topcoder.com/stat?c=problem_statement&pm=11358)|502|2|1||||
+[TheProgrammingContestDivTwo](http://community.topcoder.com/stat?c=problem_statement&pm=11358)|502|2|1||||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TheProgrammingContestDivTwo.py)
 [TheLotteryBothDivs](http://community.topcoder.com/stat?c=problem_statement&pm=11359)|502|2|2||||
 [TheCowDivTwo](http://community.topcoder.com/stat?c=problem_statement&pm=11352)|502|2|3||||
 [FoxProgression](http://community.topcoder.com/stat?c=problem_statement&pm=11283)|501|2|1||||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FoxProgression.py)
@@ -609,7 +621,7 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード(Java)|ソースコード(Pyt
 [DreamingAboutCarrots](http://community.topcoder.com/stat?c=problem_statement&pm=8314)|401|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/DreamingAboutCarrots.java)|
 [FIELDDiagrams](http://community.topcoder.com/stat?c=problem_statement&pm=8776)|401|2|2||||
 [RunningLetters](http://community.topcoder.com/stat?c=problem_statement&pm=8321)|401|2|3||||
-[GrabbingTaxi](http://community.topcoder.com/stat?c=problem_statement&pm=8753)|400|2|1||||
+[GrabbingTaxi](http://community.topcoder.com/stat?c=problem_statement&pm=8753)|400|2|1||||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/GrabbingTaxi.py)
 [StrongPrimePower](http://community.topcoder.com/stat?c=problem_statement&pm=8763)|400|2|2||||
 [LightedPanels](http://community.topcoder.com/stat?c=problem_statement&pm=8778)|400|2|3||||
 [CircularLine](http://community.topcoder.com/stat?c=problem_statement&pm=8761)|399|2|1||||
@@ -636,7 +648,7 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード(Java)|ソースコード(Pyt
 [AverageCandyLifetime](http://community.topcoder.com/stat?c=problem_statement&pm=8707)|392|2|1||||
 [TwoStringMasks](http://community.topcoder.com/stat?c=problem_statement&pm=8706)|392|2|2||||
 [QuasiLatinSquares](http://community.topcoder.com/stat?c=problem_statement&pm=8561)|392|2|3||||
-[SnowyWinter](http://community.topcoder.com/stat?c=problem_statement&pm=8620)|391|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/SnowyWinter.java)|
+[SnowyWinter](http://community.topcoder.com/stat?c=problem_statement&pm=8620)|391|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/SnowyWinter.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/SnowyWinter.py)
 [IsomorphicWords](http://community.topcoder.com/stat?c=problem_statement&pm=8175)|391|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/IsomorphicWords.java)|
 [MarbleCollectionGame](http://community.topcoder.com/stat?c=problem_statement&pm=8488)|391|2|3||||
 [FingerCounting](http://community.topcoder.com/stat?c=problem_statement&pm=8300)|390|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FingerCounting.java)|
@@ -648,7 +660,7 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード(Java)|ソースコード(Pyt
 [MonotoneSequence](http://community.topcoder.com/stat?c=problem_statement&pm=8564)|388|2|1||||
 [VoteRigging](http://community.topcoder.com/stat?c=problem_statement&pm=8520)|388|2|2||||
 [SmoothNumbersHard](http://community.topcoder.com/stat?c=problem_statement&pm=8565)|388|2|3||||
-[GuessingNextElement](http://community.topcoder.com/stat?c=problem_statement&pm=8539)|387|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/GuessingNextElement.java)|
+[GuessingNextElement](http://community.topcoder.com/stat?c=problem_statement&pm=8539)|387|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/GuessingNextElement.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/GuessingNextElement.py)
 [MarblesRegroupingEasy](http://community.topcoder.com/stat?c=problem_statement&pm=8527)|387|2|2||||
 [MarblesRegroupingHard](http://community.topcoder.com/stat?c=problem_statement&pm=8538)|387|2|3||||
 [TrophyShelf](http://community.topcoder.com/stat?c=problem_statement&pm=8541)|386|2|1||||
@@ -853,7 +865,7 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード(Java)|ソースコード(Pyt
 [BusSeating](http://community.topcoder.com/stat?c=problem_statement&pm=6715)|319|2|2||||
 [IncompleteBST](http://community.topcoder.com/stat?c=problem_statement&pm=6713)|319|2|3||||
 [BiggestRectangleEasy](http://community.topcoder.com/stat?c=problem_statement&pm=6677)|318|2|1||||
-[ReturnToHome](http://community.topcoder.com/stat?c=problem_statement&pm=6684)|318|2|2||||
+[ReturnToHome](http://community.topcoder.com/stat?c=problem_statement&pm=6684)|318|2|2||||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/ReturnToHome.py)
 [SimplifiedDarts](http://community.topcoder.com/stat?c=problem_statement&pm=6685)|318|2|3||||
 [HiddenMessage](http://community.topcoder.com/stat?c=problem_statement&pm=6618)|316|2|1||||
 [InboxCleanup](http://community.topcoder.com/stat?c=problem_statement&pm=6619)|316|2|2||||
