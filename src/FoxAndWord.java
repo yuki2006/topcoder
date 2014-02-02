@@ -1,44 +1,26 @@
-import java.util.*;
-import java.util.regex.*;
-import java.text.*;
-import java.math.*;
 
-public class AlienAndGame {
-	public int getNumber(String[] board) {
-		boolean[][] table = new boolean[board.length][board[0].length()];
-		for (int i = 0; i < table.length; i++) {
-			for (int j = 0; j < table[0].length; j++) {
-				table[i][j] = board[i].charAt(j) == 'W';
-			}
-		}
-		for (int r = 50; r >= 0; r--) {
-			for (int i = 0; i <= table.length - r; i++) {
-				for (int j = 0; j <= table[0].length - r; j++) {
-					boolean ret = checkRow(table, i, j, r);
-					if (ret) {
-						return r * r;
-					}
+public class FoxAndWord
+{
+	public int howManyPairs(String[] words)
+	{
+		int count = 0;
+		for (int i = 0; i < words.length; i++) {
+			for (int j = i + 1; j < words.length; j++) {
+				if (check(words[i], words[j])) {
+					count++;
 				}
 			}
 		}
-		return -1;
+		return count;
 	}
 
-	private boolean checkRow(boolean[][] table, int i, int j, int r) {
-		for (int i2 = i; i2 < i + r; i2++) {
-			int count = 0;
-			for (int j2 = j; j2 < j + r; j2++) {
-				if (table[i2][j2] == table[i2][j]) {
-					count++;
-				} else {
-					break;
-				}
-			}
-			if (count != r) {
-				return false;
+	private boolean check(String s, String s2) {
+		for (int i = 1; i < s.length(); i++) {
+			if (s2.equals(s.substring(i) + s.substring(0, i))) {
+				return true;
 			}
 		}
-		return true;
+		return false;
 	}
 
 	// BEGIN KAWIGIEDIT TESTING
@@ -53,11 +35,11 @@ public class AlienAndGame {
 		}
 		System.out.print("}");
 		System.out.println("]");
-		AlienAndGame obj;
+		FoxAndWord obj;
 		int answer;
-		obj = new AlienAndGame();
+		obj = new FoxAndWord();
 		long startTime = System.currentTimeMillis();
-		answer = obj.getNumber(p0);
+		answer = obj.howManyPairs(p0);
 		long endTime = System.currentTimeMillis();
 		boolean res;
 		res = true;
@@ -97,41 +79,49 @@ public class AlienAndGame {
 
 		// ----- test 0 -----
 		disabled = false;
-		p0 = new String[] { "BB", "WW" };
-		p1 = 4;
+		p0 = new String[] { "tokyo", "kyoto" };
+		p1 = 1;
 		all_right = (disabled || KawigiEdit_RunTest(0, p0, true, p1)) && all_right;
 		tests_disabled = tests_disabled || disabled;
 		// ------------------
 
 		// ----- test 1 -----
 		disabled = false;
-		p0 = new String[] { "W" };
-		p1 = 1;
+		p0 = new String[] { "aaaaa", "bbbbb" };
+		p1 = 0;
 		all_right = (disabled || KawigiEdit_RunTest(1, p0, true, p1)) && all_right;
 		tests_disabled = tests_disabled || disabled;
 		// ------------------
 
 		// ----- test 2 -----
 		disabled = false;
-		p0 = new String[] { "WBBB", "WBBB", "WWWW" };
-		p1 = 9;
+		p0 = new String[] { "ababab", "bababa", "aaabbb" };
+		p1 = 1;
 		all_right = (disabled || KawigiEdit_RunTest(2, p0, true, p1)) && all_right;
 		tests_disabled = tests_disabled || disabled;
 		// ------------------
 
 		// ----- test 3 -----
 		disabled = false;
-		p0 = new String[] { "W", "B", "W", "W", "W" };
-		p1 = 1;
+		p0 = new String[] { "eel", "ele", "lee" };
+		p1 = 3;
 		all_right = (disabled || KawigiEdit_RunTest(3, p0, true, p1)) && all_right;
 		tests_disabled = tests_disabled || disabled;
 		// ------------------
 
 		// ----- test 4 -----
 		disabled = false;
-		p0 = new String[] { "BWBBWBB", "WWBWWBW", "BBBBBBW", "WBBBBWB", "BBWWWWB", "WWWWWWW", "BBWWBBB" };
-		p1 = 9;
+		p0 = new String[] { "aaa", "aab", "aba", "abb", "baa", "bab", "bba", "bbb" };
+		p1 = 6;
 		all_right = (disabled || KawigiEdit_RunTest(4, p0, true, p1)) && all_right;
+		tests_disabled = tests_disabled || disabled;
+		// ------------------
+
+		// ----- test 5 -----
+		disabled = false;
+		p0 = new String[] { "top", "coder" };
+		p1 = 0;
+		all_right = (disabled || KawigiEdit_RunTest(5, p0, true, p1)) && all_right;
 		tests_disabled = tests_disabled || disabled;
 		// ------------------
 
