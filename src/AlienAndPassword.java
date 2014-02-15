@@ -6,7 +6,8 @@ import java.math.*;
 public class AlienAndPassword {
 	public int getNumber(String S) {
 		HashSet<String> set = new HashSet<>();
-		for (int i = 0; i < S.length(); i++) {
+
+        for (int i = 0; i < S.length(); i++) {
 			set.add(S.substring(0, i) + S.substring(i + 1));
 		}
 		return set.size();
