@@ -8,6 +8,23 @@ public class TypoCoderDiv2
 	public int count(int[] rating)
 	{
 		int count = 0;
+		for (int i = 1; i < rating.length; i++) {
+			int old=rating[i-1];
+			int rat=rating[i];
+			if (rat >= 1200 && old < 1200) {
+				count++;
+			} else if (rat < 1200 && old >= 1200) {
+				count++;
+			}
+			old = rat;			
+		}
+		return count;
+	}
+	
+	
+	public int count2(int[] rating)
+	{
+		int count = 0;
 		int old = 0;
 		for (int rat : rating) {
 			if (rat >= 1200 && old < 1200) {
