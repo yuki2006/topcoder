@@ -1,13 +1,31 @@
 ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード(Java)|ソースコード(Python)
 :--|:--|:--|:--| :-- | :--|:--|:--|
-[EllysSubstringSorter](http://community.topcoder.com/stat?c=problem_statement&pm=12977)|606|2|1||||
-[EllysNumberGuessing](http://community.topcoder.com/stat?c=problem_statement&pm=12975)|606|2|2||||
+[LeftAndRightHandedDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=13043)|612|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/LeftAndRightHandedDiv2.java)|
+[EmoticonsDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=13041)|612|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/EmoticonsDiv2.java)|
+[PowersOfTwo](http://community.topcoder.com/stat?c=problem_statement&pm=13042)|612|2|3|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PowersOfTwo.java)|
+[InterestingNumber](http://community.topcoder.com/stat?c=problem_statement&pm=13038)|611|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/InterestingNumber.java)|
+[LCMSetEasy](http://community.topcoder.com/stat?c=problem_statement&pm=13040)|611|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/LCMSetEasy.java)|
+[ElephantDrinkingEasy](http://community.topcoder.com/stat?c=problem_statement&pm=13039)|611|2|3|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/ElephantDrinkingEasy.java)|
+[DivideByZero](http://community.topcoder.com/stat?c=problem_statement&pm=12911)|610|2|1||||
+[TheMatrix](http://community.topcoder.com/stat?c=problem_statement&pm=13035)|610|2|2||||
+[MiningGoldEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12931)|610|2|3||||
+[MagicalStringDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=13004)|609|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/MagicalStringDiv2.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/MagicalStringDiv2.py)
+[PackingBallsDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12995)|609|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PackingBallsDiv2.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PackingBallsDiv2.py)
+[VocaloidsAndSongs](http://community.topcoder.com/stat?c=problem_statement&pm=12989)|609|2|3|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/VocaloidsAndSongs.java)|
+[OneDimensionalRobotEasy](http://community.topcoder.com/stat?c=problem_statement&pm=13000)|608|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/OneDimensionalRobotEasy.java)|
+[MysticAndCandiesEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12998)|608|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/MysticAndCandiesEasy.java)|
+[BigOEasy](http://community.topcoder.com/stat?c=problem_statement&pm=13002)|608|2|3|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/BigOEasy.java)|
+[BoundingBox](http://community.topcoder.com/stat?c=problem_statement&pm=12990)|607|2|1||||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/BoundingBox.py)
+[PalindromicSubstringsDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12967)|607|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PalindromicSubstringsDiv2.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PalindromicSubstringsDiv2.py)
+[CombinationLockDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12969)|607|2|3|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/CombinationLockDiv2.java)|
+[EllysSubstringSorter](http://community.topcoder.com/stat?c=problem_statement&pm=12977)|606|2|1||||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/EllysSubstringSorter.py)
+[EllysNumberGuessing](http://community.topcoder.com/stat?c=problem_statement&pm=12975)|606|2|2||||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/EllysNumberGuessing.py)
 [EllysCandyGame](http://community.topcoder.com/stat?c=problem_statement&pm=12394)|606|2|3||||
 [AlienAndPassword](http://community.topcoder.com/stat?c=problem_statement&pm=12950)|605|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/AlienAndPassword.java)|
 [AlienAndGame](http://community.topcoder.com/stat?c=problem_statement&pm=12821)|605|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/AlienAndGame.java)|
 [AlienAndSetDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12954)|605|2|3||||
 [FoxAndWord](http://community.topcoder.com/stat?c=problem_statement&pm=12953)|604|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FoxAndWord.java)|
-[PowerOfThreeEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12952)|604|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PowerOfThreeEasy.java)|
+[PowerOfThreeEasy](http://community.topcoder.com/stat?c=problem_statement&pm=12952)|604|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PowerOfThreeEasy.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PowerOfThreeEasy.py)
 [FoxConnection2](http://community.topcoder.com/stat?c=problem_statement&pm=12951)|604|2|3|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FoxConnection2.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FoxConnection2.py)
 [MiddleCode](http://community.topcoder.com/stat?c=problem_statement&pm=12940)|603|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/MiddleCode.java)|
 [SplitIntoPairs](http://community.topcoder.com/stat?c=problem_statement&pm=12939)|603|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/SplitIntoPairs.java)|
@@ -15,7 +33,7 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード(Java)|ソースコード(Pyt
 [TypoCoderDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12927)|602|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TypoCoderDiv2.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TypoCoderDiv2.py)
 [PilingRectsDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12928)|602|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PilingRectsDiv2.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/PilingRectsDiv2.py)
 [BlackBoxDiv2](http://community.topcoder.com/stat?c=problem_statement&pm=12929)|602|2|3||||
-[WinterAndMandarins](http://community.topcoder.com/stat?c=problem_statement&pm=12858)|601|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/WinterAndMandarins.java)|
+[WinterAndMandarins](http://community.topcoder.com/stat?c=problem_statement&pm=12858)|601|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/WinterAndMandarins.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/WinterAndMandarins.py)
 [WinterAndCandies](http://community.topcoder.com/stat?c=problem_statement&pm=12859)|601|2|2|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/WinterAndCandies.java)|
 [WinterAndReindeers](http://community.topcoder.com/stat?c=problem_statement&pm=12872)|601|2|3|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/WinterAndReindeers.java)|
 [TheShuttles](http://community.topcoder.com/stat?c=problem_statement&pm=12824)|600|2|1|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TheShuttles.java)|[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TheShuttles.py)
@@ -320,7 +338,7 @@ ClassName|SRM|Div|Level| コメント | 自己評価|ソースコード(Java)|ソースコード(Pyt
 [KingdomXCitiesandVillagesAnother](http://community.topcoder.com/stat?c=problem_statement&pm=10835)|503|2|3||||
 [TheProgrammingContestDivTwo](http://community.topcoder.com/stat?c=problem_statement&pm=11358)|502|2|1||||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TheProgrammingContestDivTwo.py)
 [TheLotteryBothDivs](http://community.topcoder.com/stat?c=problem_statement&pm=11359)|502|2|2||||
-[TheCowDivTwo](http://community.topcoder.com/stat?c=problem_statement&pm=11352)|502|2|3||||
+[TheCowDivTwo](http://community.topcoder.com/stat?c=problem_statement&pm=11352)|502|2|3|||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/TheCowDivTwo.java)|
 [FoxProgression](http://community.topcoder.com/stat?c=problem_statement&pm=11283)|501|2|1||||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FoxProgression.py)
 [FoxPlayingGame](http://community.topcoder.com/stat?c=problem_statement&pm=11284)|501|2|2||||[ソース](https://github.com/yuki2006/topcoder/blob/master/src/FoxPlayingGame.py)
 [FoxAverageSequence](http://community.topcoder.com/stat?c=problem_statement&pm=11340)|501|2|3||||
