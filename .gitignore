@@ -8,3 +8,5 @@
 *.ear
 /bin
 .setting
+
+.idea/
