@@ -6,8 +6,9 @@ class LongWordsDiv2:
         if re.search(r'(.)\1', word):
             return "Dislikes"
 
-        if re.search(r'(.).*(.).*\1.*\2' , word):
+        if re.search(r'F' , word):
             return "Dislikes"
+
         return "Likes"
 
 # BEGIN KAWIGIEDIT TESTING
